@@ -1,4 +1,27 @@
-#whiskermenu-window {
-  background-color: #542E7A;
+#whiskermenu-window * {
+  border: 0;
+  outline: none;
 }
 
+#whiskermenu-window {
+  background-color: #542E7A;
+  color: #ccc;
+}
+
+#whiskermenu-window iconview {
+  background-color: #302040;
+  color: #f0f0f0;
+}
+#whiskermenu-window iconview:hover
+{
+  background-color: #d04080;
+  color: #ffffff;
+}
+
+#whiskermenu-window button:focus,
+#whiskermenu-window button:hover,
+#whiskermenu-window treeview:selected,
+#whiskermenu-window treeview:hover
+{
+  color: #ffffff;
+}
