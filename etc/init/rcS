@@ -41,6 +41,9 @@ ip link set lo up
 alsactl restore
 
 dbus-daemon --system --fork
+
+/local/bin/console-kit-daemon
+
 pulseaudio --system -D
 
 lightdm &
