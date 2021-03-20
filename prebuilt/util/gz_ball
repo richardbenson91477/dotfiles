@@ -1,5 +1,5 @@
 #!/bin/sh
 BN=$(strip_trailing_slash "$1")
 OUTF=$(basename "$BN".tar.gz)
-tar c "$BN" | pigz -5 > "$OUTF"
+tar c --sort=name "$BN" | pigz -5 > "$OUTF"
 
