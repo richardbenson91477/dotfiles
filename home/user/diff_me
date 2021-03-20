@@ -1,6 +1,8 @@
 #!/bin/sh
+IFS='
+'
 for f in $(find . -type f -not -name "diff_me"); do
     echo "*** $f ***"
-    diff "$f" /home/rich/"$f"
+    diff "/home/rich/$f" "$f"
     done |\
   less
