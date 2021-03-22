@@ -10,7 +10,7 @@ back rgb(61,56,70)
 use_back 1
 text rgb(243,189,255)
 use_text 1
-fontname System-ui 12
+fontname NULL
 toolbar 1
 auto_hide_toolbar 1
 scrollbar 1

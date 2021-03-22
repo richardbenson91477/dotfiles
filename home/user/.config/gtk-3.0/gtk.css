@@ -4,17 +4,17 @@
 }
 
 #whiskermenu-window {
-  background-color: #542E7A;
+  background-color: #505050;
   color: #ccc;
 }
 
 #whiskermenu-window iconview {
-  background-color: #302040;
+  background-color: #202020;
   color: #f0f0f0;
 }
 #whiskermenu-window iconview:hover
 {
-  background-color: #f02050;
+  background-color: #a02050;
   color: #ffffff;
 }
 
