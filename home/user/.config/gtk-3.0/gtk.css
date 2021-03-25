@@ -1,21 +1,19 @@
 #whiskermenu-window * {
   border: 0;
   outline: none;
+  color: #f0f0f0;
 }
 
 #whiskermenu-window {
   background-color: #505050;
-  color: #ccc;
 }
 
 #whiskermenu-window iconview {
   background-color: #202020;
-  color: #f0f0f0;
 }
 #whiskermenu-window iconview:hover
 {
   background-color: #a02050;
-  color: #ffffff;
 }
 
 #whiskermenu-window button:focus,
@@ -23,5 +21,4 @@
 #whiskermenu-window treeview:selected,
 #whiskermenu-window treeview:hover
 {
-  color: #ffffff;
 }
