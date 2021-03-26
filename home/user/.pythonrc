@@ -1,0 +1,3 @@
+import readline
+readline.set_history_length(0)
+
