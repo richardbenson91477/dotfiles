@@ -48,3 +48,5 @@ pulseaudio --system -D
 
 lightdm &
 
+/etc/rc.local
+

