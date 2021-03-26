@@ -5,7 +5,7 @@
 }
 
 #whiskermenu-window {
-  background-color: #505050;
+  background-color: #404040;
 }
 
 #whiskermenu-window iconview {
@@ -13,7 +13,7 @@
 }
 #whiskermenu-window iconview:hover
 {
-  background-color: #a02050;
+  background-color: #606060;
 }
 
 #whiskermenu-window button:focus,
