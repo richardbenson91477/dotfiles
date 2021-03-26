@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# lol
+
+man -Tpdf $@ | zathura -
+
