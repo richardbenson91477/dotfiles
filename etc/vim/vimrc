@@ -46,6 +46,8 @@ inoremap ;; <esc>
 vnoremap <leader>y "+y
 nnoremap <leader>p "+p
 nnoremap <leader>P "+P
+nnoremap <silent> <leader> :WhichKey ','<CR>
+nnoremap <Space> :WhichKey ','<CR>
 
 " display 
 nnoremap <leader>dd :Lexplore<cr>
