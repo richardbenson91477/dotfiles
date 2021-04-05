@@ -14,6 +14,8 @@ alias open='gio open'
 alias cdr='cd $(realpath "$PWD")'
 alias term='xterm -fa "Monospace-14" -g 100x33 -ls "$@"'
 alias less='less -R'
+alias ncdu='ncdu --color=dark'
+alias yay='yay --sudo doas'
 
 #set -o vi
 if [ x"$SHELL" = x"bash" ]; then
