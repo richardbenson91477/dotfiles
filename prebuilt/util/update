@@ -1,2 +1,7 @@
 #!/bin/sh
-apt update && apt full-upgrade -y
+which apt >& /dev/null && 
+    apt update && apt full-upgrade -y
+
+which pacman >& /dev/null &&
+    pacman -Syu
+

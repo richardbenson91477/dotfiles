@@ -1,5 +1,5 @@
 #!/bin/sh
 BN=$(strip_trailing_slash "$1")
 OUTF=$(basename "$BN".tzstd)
-tar c "$BN" | zstd -T0 -18 - > "$OUTF"
+tar c --sort=name "$BN" | zstd -T0 -18 - > "$OUTF"
 

@@ -10,15 +10,16 @@ for u in rich kathy; do
 
 # root home
 rm -vrf \
-    /root/.aptitude/ /root/.cache/ /root/.local/ /root/.synaptic/ /root/.gnupg/ \
+    /root/.cache/ /root/.local/ /root/.gnupg/ \
     /root/.ssh/
 
 # docs / locales
 rm -vrf \
     /usr/share/doc/* /usr/share/help/* \
-    /usr/share/gtk-doc/html/* /usr/shaer/bug/ /usr/share/locale/*/
+    /usr/share/gtk-doc/html/* /usr/share/locale/*/
 
-apt clean
+
+which pacman >& /dev/null && rm -f /var/cache/pacman/pkg/*
 
 updatedb
 
