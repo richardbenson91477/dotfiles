@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FS=/dev/nvme0n1p3
+FS=$(blkid --label "swap")
 
 echo cleaning swap
 swapoff -a
