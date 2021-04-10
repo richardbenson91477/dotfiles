@@ -6,7 +6,7 @@ export CPU_N=$(cat /proc/cpuinfo | grep siblings | head -n 1 | awk '{print $3}')
 export PYTHONSTARTUP="$HOME/.pythonrc"
 
 alias make="make -j""$(($CPU_N))"
-alias ls='ls --color'
+alias ls='ls --color=always'
 alias dmesg='dmesg --color=always'
 alias grep='grep --color=auto'
 alias tree='tree -C'
