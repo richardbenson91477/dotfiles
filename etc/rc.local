@@ -1,12 +1,5 @@
 #!/bin/sh
 
-C=0
-for f in $(cat /proc/cpuinfo | grep siblings | awk '{print $1}'); do
-    echo "$C"
-    cpufreq-set -c "$C" -g ondemand &
-    C=$(expr "$C" + 1)
-    done
-
 irqbalance &
 
 sleep 10 && rmdir /srv &
