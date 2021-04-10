@@ -1,10 +1,12 @@
 #!/bin/sh
 
-sleep 10 && \
-    for c in 0 1 2 3; do
-        cpufreq-set -c "$c" --min 2GHz -g performance
-        done &
+C=0
+for f in $(cat /proc/cpuinfo | grep siblings | field 1); do
+    echo "$C"
+    cpufreq-set -c "$C" -g ondemand &
+    C=$(expr "$C" + 1)
+    done
 
-sleep 20 && \
-    rm -rf /srv/ &
+irqbalance &
 
+sleep 10 && rmdir /srv &
