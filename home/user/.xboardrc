@@ -5,7 +5,7 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1613005893
+-saveDate 1618179316
 -whitePieceColor #e2db9f
 -blackPieceColor #202020
 -lightSquareColor #d897a8
@@ -117,14 +117,10 @@
 "kc" -icshost alanimus.com -icshelper timeseal
 }
 -recentEngines 5
--recentEngineList {fairymax
-sjaakii
-fairy-stockfish
-phalanx
-}
--firstChessProgramNames {phalanx
+-recentEngineList {sjaakii
 fairymax
-fairy-stockfish
+}
+-firstChessProgramNames {fairymax
 sjaakii
 }
 -themeNames {"native" -ubt false -pid "" -trueColors false -flipBlack false -overrideLineGap -1
@@ -225,8 +221,8 @@ sjaakii
 -analysisBell 0
 -timeOddsMode 0
 -keepLineBreaksICS false
--winWidth 519
--winHeight 626
+-winWidth 492
+-winHeight 596
 -x 553
 -y 185
 -icsUp false
