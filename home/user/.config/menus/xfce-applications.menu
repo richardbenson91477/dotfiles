@@ -53,4 +53,17 @@
 			<Filename>dolphin-emu.desktop</Filename>
 		</Exclude>
 	</Menu>
+	<Menu>
+		<Name>Accessories</Name>
+		<AppDir>/home/rich/.local/share/applications</AppDir>
+		<Exclude>
+			<Filename>thunar-bulk-rename.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>xfce4-run.desktop</Filename>
+		</Exclude>
+		<Include>
+			<Filename>xfce4-appfinder.desktop</Filename>
+		</Include>
+	</Menu>
 </Menu>

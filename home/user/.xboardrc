@@ -5,7 +5,7 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1618179316
+-saveDate 1618599009
 -whitePieceColor #e2db9f
 -blackPieceColor #202020
 -lightSquareColor #d897a8
@@ -117,8 +117,8 @@
 "kc" -icshost alanimus.com -icshelper timeseal
 }
 -recentEngines 5
--recentEngineList {sjaakii
-fairymax
+-recentEngineList {fairymax
+sjaakii
 }
 -firstChessProgramNames {fairymax
 sjaakii
@@ -221,41 +221,41 @@ sjaakii
 -analysisBell 0
 -timeOddsMode 0
 -keepLineBreaksICS false
--winWidth 492
--winHeight 596
--x 553
--y 185
+-winWidth 489
+-winHeight 585
+-x 1194
+-y 195
 -icsUp false
--icsX 2147483095
--icsY 2147483463
+-icsX 2147482454
+-icsY 2147483453
 -icsW -2147483648
 -icsH -2147483648
--commentX -453
--commentY 657
+-commentX -1094
+-commentY 647
 -commentW 259
 -commentH 83
--tagsX -549
--tagsY -175
+-tagsX -1190
+-tagsY -185
 -tagsW 481
 -tagsH 379
--gameListX 352
--gameListY 231
+-gameListX -289
+-gameListY 221
 -gameListW 575
 -gameListH 300
--slaveX 2147483095
--slaveY 2147483463
+-slaveX 2147482454
+-slaveY 2147483453
 -moveHistoryUp false
--moveHistoryX -51
--moveHistoryY 763
+-moveHistoryX -692
+-moveHistoryY 753
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 2147483095
--evalGraphY 2147483463
+-evalGraphX 2147482454
+-evalGraphY 2147483453
 -evalGraphW 300
 -evalGraphH 150
 -engineOutputUp false
--engineOutputX 2147483095
--engineOutputY 2147483463
+-engineOutputX 2147482454
+-engineOutputY 2147483453
 -engineOutputW -2147483648
 -engineOutputH -2147483648
