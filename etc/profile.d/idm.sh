@@ -29,3 +29,6 @@ if [ x"$TERM" = x"xterm" ]; then
 
 stty -ixon
 
+export PS1="\[\033[1;32;40m\]\u\[\033[0m\]@\[\033[31;40m\]\[\033[1;34;40m\]\h\[\033[0m\]:\w: "
+export PS2='▶ '
+
