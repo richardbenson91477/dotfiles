@@ -7,20 +7,23 @@ fi
 
 U="root"
 
-while getopts "u:" arg; do
-  case ${arg} in
-    u)
-      U="$OPTARG"
-      ;;
-    :)
-      echo "$0: Must supply an argument to -$OPTARG." >&2
-      exit 1
-      ;;
-    ?)
-      echo "Invalid option: -${OPTARG}."
-      exit 2
-      ;;
-  esac
+while getopts "u:i" arg; do
+    case ${arg} in
+        u)
+            U="$OPTARG"
+            ;;
+        i)
+            exec su -
+            ;;
+        :)
+            echo "$0: Must supply an argument to -$OPTARG." >&2
+            exit 1
+            ;;
+        ?)
+            echo "Invalid option: -${OPTARG}."
+            exit 2
+            ;;
+    esac
 done
 shift $(expr $OPTIND - 1)
 
