@@ -1,8 +1,9 @@
 #!/bin/sh
 
-if [ -z "$(lsblk -f | grep flinuxroot)" ]; then
+#if [ -z "$(lsblk -f | grep flinuxroot)" ]; then
+if [ -z "$(blkid | grep flinuxroot)" ]; then
     echo no flinuxroot found
-    return
+    exit -1
 fi
 
 mount LABEL=linuxroot /media/mnt
