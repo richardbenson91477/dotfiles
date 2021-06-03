@@ -8,7 +8,7 @@
  '(global-display-line-numbers-mode t)
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(gnu-apl-mode slime powerline org neotree mood-one-theme markdown-mode humanoid-themes gnu-elpa geiser evil color-theme-approximate)))
+   '(rainbow-mode gnu-elpa-keyring-update gnu-apl-mode slime powerline org neotree mood-one-theme markdown-mode humanoid-themes gnu-elpa geiser evil color-theme-approximate)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+if [ z"$1" = "z" ]; then
+    echo 'missing arguments'
+    exit
+fi
+
+U="root"
+
+while getopts "u:i" arg; do
+    case ${arg} in
+        u)
+            U="$OPTARG"
+            ;;
+        i)
+            exec su -
+            ;;
+        :)
+            echo "$0: Must supply an argument to -$OPTARG." >&2
+            exit 1
+            ;;
+        ?)
+            echo "Invalid option: -${OPTARG}."
+            exit 2
+            ;;
+    esac
+done
+shift $(expr $OPTIND - 1)
+
+#echo "$@"
+eval "su $U -c '$@'"
+
