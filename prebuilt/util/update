@@ -5,3 +5,4 @@ which apt >& /dev/null &&
 which pacman >& /dev/null &&
     pacman -Syu
 
+find /etc/ -name '*.pac*'
