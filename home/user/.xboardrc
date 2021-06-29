@@ -5,14 +5,14 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1623639487
+-saveDate 1624930809
 -whitePieceColor #e2db9f
 -blackPieceColor #202020
 -lightSquareColor #e183b7
 -darkSquareColor #7e55ab
 -highlightSquareColor #ffff84
 -premoveHighlightColor #FF0000
--movesPerSession -1000
+-movesPerSession -5000
 -variations true
 -appendPV true
 -internetChessServerInputBox false
@@ -122,7 +122,6 @@ sjaakii
 }
 -firstChessProgramNames {fairymax
 sjaakii
-"gnuchess -x"
 }
 -themeNames {"native" -ubt false -pid "" -trueColors false -flipBlack false -overrideLineGap -1
 "classic" -ubt false -lsc #c8c365 -dsc #77a26d -pid "" -wpc #ffffcc -bpc #202020 -hsc #ffff00 -phc #ff0000 -overrideLineGap -1 -flipBlack false
@@ -222,41 +221,41 @@ sjaakii
 -analysisBell 0
 -timeOddsMode 0
 -keepLineBreaksICS false
--winWidth 492
--winHeight 586
--x 717
--y 298
+-winWidth 508
+-winHeight 592
+-x 458
+-y 225
 -icsUp false
--icsX 2147482931
--icsY 2147483350
+-icsX 2147483190
+-icsY 2147483423
 -icsW -2147483648
 -icsH -2147483648
--commentX -617
--commentY 544
+-commentX -358
+-commentY 617
 -commentW 259
 -commentH 83
--tagsX -713
--tagsY -288
+-tagsX -454
+-tagsY -215
 -tagsW 481
 -tagsH 379
--gameListX 188
--gameListY 118
+-gameListX 447
+-gameListY 191
 -gameListW 575
 -gameListH 300
--slaveX 2147482931
--slaveY 2147483350
+-slaveX 2147483190
+-slaveY 2147483423
 -moveHistoryUp false
--moveHistoryX -215
--moveHistoryY 650
+-moveHistoryX 44
+-moveHistoryY 723
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 2147482931
--evalGraphY 2147483350
+-evalGraphX 2147483190
+-evalGraphY 2147483423
 -evalGraphW 300
 -evalGraphH 150
 -engineOutputUp false
--engineOutputX 2147482931
--engineOutputY 2147483350
+-engineOutputX 2147483190
+-engineOutputY 2147483423
 -engineOutputW -2147483648
 -engineOutputH -2147483648
