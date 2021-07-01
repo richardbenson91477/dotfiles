@@ -1,6 +1,6 @@
 source /etc/environment
 
-PATH="/local/bin:/prebuilt/jdk/bin:/usr/sbin:/usr/bin:/prebuilt/bin:/prebuilt/rescue:/prebuilt/util:/usr/games:$HOME/bin"
+PATH="/local/bin:/usr/sbin:/usr/bin:/local/util:/local/rescue:/usr/games:$HOME/bin:$HOME/.local/bin"
 
 export CPU_N=$(cat /proc/cpuinfo | grep siblings | head -n 1 | awk '{print $3}')
 export PYTHONSTARTUP="$HOME/.pythonrc"

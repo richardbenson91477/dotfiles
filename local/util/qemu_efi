@@ -8,6 +8,6 @@ qemu-system-x86_64 \
     -net user \
     -device intel-hda -device hda-duplex \
     -m 2048M \
-    -bios /prebuilt/efi/OVMF.fd \
+    -bios /local/prebuilt/efi/OVMF.fd \
     $@
 
