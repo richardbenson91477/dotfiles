@@ -1,8 +1,9 @@
 #!/bin/sh
 which apt >& /dev/null && 
-    apt update && apt full-upgrade -y
+    apt update &&
+    apt full-upgrade -y &&
+    find /etc/ -name '*.dpkg*'
 
 which pacman >& /dev/null &&
-    pacman -Syu
-
-find /etc/ -name '*.pac*'
+    pacman -Syu &&
+    find /etc/ -name '*.pac*'
