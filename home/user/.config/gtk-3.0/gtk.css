@@ -1,0 +1,32 @@
+#pulseaudio-button menu .linked button {
+    color: lightblue;
+    border-color: gray;
+}
+
+/*
+#whiskermenu-window * {
+  border: 0;
+  outline: none;
+  color: #f0f0f0;
+}
+
+#whiskermenu-window {
+  background-color: #303030;
+}
+
+#whiskermenu-window iconview {
+  background-color: #202020;
+}
+#whiskermenu-window iconview:hover
+{
+  background-color: #606060;
+}
+
+#whiskermenu-window button:focus,
+#whiskermenu-window button:hover,
+#whiskermenu-window treeview:selected,
+#whiskermenu-window treeview:hover
+{
+}
+*/
+
