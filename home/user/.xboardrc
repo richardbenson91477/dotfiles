@@ -5,12 +5,12 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1625116350
--whitePieceColor #e2db9f
+-saveDate 1626214118
+-whitePieceColor #c6e9fc
 -blackPieceColor #202020
--lightSquareColor #e183b7
--darkSquareColor #7e55ab
--highlightSquareColor #ffff84
+-lightSquareColor #97add8
+-darkSquareColor #4c628c
+-highlightSquareColor #ffc984
 -premoveHighlightColor #FF0000
 -movesPerSession -5000
 -variations true
@@ -135,8 +135,9 @@ sjaakii
 # end
 "porange2" -ubt false -lsc #ffa58c -dsc #8050b3 -ub false -upf false -wpc #e2db9f -bpc #202020 -hsc #ffff84 -phc #FF0000
 "cyan1" -ubt false -lsc #97cfd8 -dsc #4c7e8c -ub false -upf false -wpc #e2db9f -bpc #202020 -hsc #ffff84 -phc #FF0000
-"baobab" -ubt false -lsc #ff8e5c -dsc #bd3500 -ub false -upf false -wpc #e2db9f -bpc #202020 -hsc #ffff84 -phc #FF0000
 "purp1" -ubt false -lsc #e183b7 -dsc #7e55ab -ub false -upf false -wpc #e2db9f -bpc #202020 -hsc #ffff84 -phc #FF0000
+"baobab" -ubt false -lsc #ff8e5c -dsc #bd3500 -ub false -upf false -wpc #f5d8a9 -bpc #000000 -hsc #ffff84 -phc #FF0000
+"blue1" -ubt false -lsc #97add8 -dsc #4c628c -ub false -upf false -wpc #c6e9fc -bpc #202020 -hsc #ffc984 -phc #FF0000
 }
 -showButtonBar true
 -pgnExtendedInfo true
@@ -221,41 +222,41 @@ sjaakii
 -analysisBell 0
 -timeOddsMode 0
 -keepLineBreaksICS false
--winWidth 507
--winHeight 594
--x 518
--y 187
+-winWidth 486
+-winHeight 587
+-x 656
+-y 24
 -icsUp false
--icsX 2147483130
--icsY 2147483461
+-icsX 2147482992
+-icsY 2147483624
 -icsW -2147483648
 -icsH -2147483648
--commentX -418
--commentY 655
+-commentX -556
+-commentY 818
 -commentW 259
 -commentH 83
--tagsX -514
--tagsY -177
+-tagsX -652
+-tagsY -14
 -tagsW 481
 -tagsH 379
--gameListX 387
--gameListY 229
+-gameListX 249
+-gameListY 392
 -gameListW 575
 -gameListH 300
--slaveX 2147483130
--slaveY 2147483461
+-slaveX 2147482992
+-slaveY 2147483624
 -moveHistoryUp false
--moveHistoryX -16
--moveHistoryY 761
+-moveHistoryX -154
+-moveHistoryY 924
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 2147483130
--evalGraphY 2147483461
+-evalGraphX 2147482992
+-evalGraphY 2147483624
 -evalGraphW 300
 -evalGraphH 150
 -engineOutputUp false
--engineOutputX 2147483130
--engineOutputY 2147483461
+-engineOutputX 2147482992
+-engineOutputY 2147483624
 -engineOutputW -2147483648
 -engineOutputH -2147483648
