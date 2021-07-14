@@ -25,7 +25,7 @@ let g:netrw_browse_split = 4
 
 filetype indent plugin on
 
-colorscheme idm3-256
+colorscheme idm-256
 syntax on
 
 let mapleader=","
@@ -50,7 +50,8 @@ nnoremap <silent> <leader> :WhichKey ','<CR>
 nnoremap <Space> :WhichKey ','<CR>
 
 " display 
-nnoremap <leader>dd :Lexplore<cr>
+nnoremap <leader>dd :NERDTree<cr>
+nnoremap <leader>dn :Lexplore<cr>
 nnoremap <leader>dt :Tagbar<cr>
 
 " files
