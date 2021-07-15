@@ -50,7 +50,7 @@ nnoremap <silent> <leader> :WhichKey ','<CR>
 nnoremap <Space> :WhichKey ','<CR>
 
 " display 
-nnoremap <leader>dd :NERDTree<cr>
+nnoremap <leader>dd :NERDTreeToggle<cr>
 nnoremap <leader>dn :Lexplore<cr>
 nnoremap <leader>dt :Tagbar<cr>
 
