@@ -1,0 +1,13 @@
+#!/bin/sh
+
+SFILE="/.swap"
+SSIZ="512M"
+
+echo cleaning swap
+swapoff -a
+wipe "$SFILE"
+dd if=/dev/zero of="$SFILE" bs="$SSIZ" count=1 oflag=sync status=progress
+chmod 0400 "$SFILE"
+mkswap -L swap "$SFILE"
+swapon -a
+
