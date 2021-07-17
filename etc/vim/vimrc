@@ -32,7 +32,7 @@ let mapleader=","
 
 " quitting
 nnoremap <leader>qq :qa<cr>
-nnoremap <leader>qs :w!<bar>:qa<cr>
+nnoremap <leader>qw :w!<bar>:qa<cr>
 nnoremap <C-c><C-q> :qa<cr>
 nnoremap <C-c><C-s> :w!<bar>q<cr>
 nnoremap <C-c><C-x> :qa!<cr>
@@ -57,7 +57,7 @@ nnoremap <leader>dt :Tagbar<cr>
 " files
 nnoremap <leader>fi :file<cr>
 nnoremap <leader>fq :q<cr>
-nnoremap <leader>fs :w<cr>
+nnoremap <leader>fw :w<cr>
 nnoremap <leader>fo :edit<space>
 nnoremap <leader>fn :enew<cr>
 nnoremap <leader>fr :read<space>
