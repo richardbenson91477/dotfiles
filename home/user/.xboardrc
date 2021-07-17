@@ -5,7 +5,7 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1626303430
+-saveDate 1626555463
 -whitePieceColor #c6e9fc
 -blackPieceColor #202020
 -lightSquareColor #97add8
@@ -117,11 +117,14 @@
 "kc" -icshost alanimus.com -icshelper timeseal
 }
 -recentEngines 5
--recentEngineList {fairymax
+-recentEngineList {gnuchessx
+gnuchess
+fairymax
 sjaakii
 }
 -firstChessProgramNames {fairymax
 sjaakii
+gnuchessx
 }
 -themeNames {"native" -ubt false -pid "" -trueColors false -flipBlack false -overrideLineGap -1
 "classic" -ubt false -lsc #c8c365 -dsc #77a26d -pid "" -wpc #ffffcc -bpc #202020 -hsc #ffff00 -phc #ff0000 -overrideLineGap -1 -flipBlack false
@@ -224,39 +227,39 @@ sjaakii
 -keepLineBreaksICS false
 -winWidth 491
 -winHeight 588
--x 594
--y 189
+-x 616
+-y 71
 -icsUp false
--icsX 2147483054
--icsY 2147483459
+-icsX 2147483032
+-icsY 2147483577
 -icsW -2147483648
 -icsH -2147483648
--commentX -494
--commentY 653
+-commentX -516
+-commentY 771
 -commentW 259
 -commentH 83
--tagsX -590
--tagsY -179
+-tagsX -612
+-tagsY -61
 -tagsW 481
 -tagsH 379
--gameListX 311
--gameListY 227
+-gameListX 289
+-gameListY 345
 -gameListW 575
 -gameListH 300
--slaveX 2147483054
--slaveY 2147483459
+-slaveX 2147483032
+-slaveY 2147483577
 -moveHistoryUp false
--moveHistoryX -92
--moveHistoryY 759
+-moveHistoryX -114
+-moveHistoryY 877
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 2147483054
--evalGraphY 2147483459
+-evalGraphX 2147483032
+-evalGraphY 2147483577
 -evalGraphW 300
 -evalGraphH 150
 -engineOutputUp false
--engineOutputX 2147483054
--engineOutputY 2147483459
+-engineOutputX 2147483032
+-engineOutputY 2147483577
 -engineOutputW -2147483648
 -engineOutputH -2147483648
