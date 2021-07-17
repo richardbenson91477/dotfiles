@@ -16,6 +16,7 @@ alias cdr='cd $(realpath "$PWD")'
 alias less='less -R'
 alias ncdu='ncdu --color=dark'
 alias yay='yay --sudo doas'
+alias aurman='echo ...try \"yay\"'
 
 #set -o vi
 if [ x"$SHELL" = x"bash" ]; then
