@@ -1,2 +1,4 @@
 #!/bin/sh
-ffmpeg -f alsa -i hw:0 -f video4linux2 -i /dev/video0 -b:v 1m vidcap_out.mp4
+
+#FIXME untested
+pw-jack ffmpeg -f jack -f video4linux2 -i /dev/video0 -b:v 1m vidcap_out.mp4
