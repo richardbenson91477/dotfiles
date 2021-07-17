@@ -1,3 +1,4 @@
 #!/bin/sh
 /prebuilt/util/clean
+/local/util/clean_dotswap
 /usr/sbin/sync
