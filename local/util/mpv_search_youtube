@@ -1,0 +1,2 @@
+#!/bin/sh
+mpv --ytdl-raw-options=default-search=ytsearch ytdl://"$@"
