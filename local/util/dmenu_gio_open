@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # lol
 
-gio open "$@"/$(ls "$@"/ | dmenu -fn Hack\-14 -l 80)
+gio open "$@"/$(ls "$@"/ | dmenu -i -fn Hack\-14 -l 80)
 
