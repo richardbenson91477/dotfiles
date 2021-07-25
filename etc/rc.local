@@ -4,4 +4,8 @@ echo 1 > /sys/devices/system/cpu/microcode/reload
 
 irqbalance &
 
+ifconfig wlp2s0 down
+macchanger -r wlp2s0
+ifconfig wlp2s0 up
+
 sleep 10 && rmdir /srv &
