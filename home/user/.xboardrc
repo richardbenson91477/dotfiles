@@ -5,12 +5,12 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1626994471
--whitePieceColor #c6e9fc
--blackPieceColor #202020
--lightSquareColor #97add8
--darkSquareColor #4c628c
--highlightSquareColor #ffc984
+-saveDate 1627405428
+-whitePieceColor #e0e0e0
+-blackPieceColor #000
+-lightSquareColor #b797d8
+-darkSquareColor #6a4c8c
+-highlightSquareColor #ffff84
 -premoveHighlightColor #FF0000
 -movesPerSession -5000
 -variations true
@@ -118,12 +118,15 @@
 }
 -recentEngines 5
 -recentEngineList {fairymax
+stockfish
+gnuchess
 gnuchessx
 sjaakii
 }
 -firstChessProgramNames {fairymax
 sjaakii
 gnuchessx
+stockfish
 }
 -themeNames {"native" -ubt false -pid "" -trueColors false -flipBlack false -overrideLineGap -1
 "classic" -ubt false -lsc #c8c365 -dsc #77a26d -pid "" -wpc #ffffcc -bpc #202020 -hsc #ffff00 -phc #ff0000 -overrideLineGap -1 -flipBlack false
@@ -140,6 +143,8 @@ gnuchessx
 "purp1" -ubt false -lsc #e183b7 -dsc #7e55ab -ub false -upf false -wpc #e2db9f -bpc #202020 -hsc #ffff84 -phc #FF0000
 "baobab" -ubt false -lsc #ff8e5c -dsc #bd3500 -ub false -upf false -wpc #f5d8a9 -bpc #000000 -hsc #ffff84 -phc #FF0000
 "blue1" -ubt false -lsc #97add8 -dsc #4c628c -ub false -upf false -wpc #c6e9fc -bpc #202020 -hsc #ffc984 -phc #FF0000
+"green1" -ubt false -lsc #97d8ab -dsc #4c8c5f -ub false -upf false -wpc #c6fcd7 -bpc #202020 -hsc #fff184 -phc #ff0000
+"purp2" -ubt false -lsc #b797d8 -dsc #6a4c8c -ub false -upf false -wpc #e0e0e0 -bpc #000 -hsc #ffff84 -phc #FF0000
 }
 -showButtonBar true
 -pgnExtendedInfo true
@@ -169,7 +174,7 @@ gnuchessx
 -autoDisplayComment false
 -autoDisplayTags false
 -adapterCommand 'polyglot -noini -ec "%fcp" -ed "%fd" -uci NalimovCache=%defaultCacheSizeEGTB -pg ShowTbHits=true'
--uxiAdapter ""
+-uxiAdapter 'usi2wb -%variant "%fcp""%fd"'
 -polyglotDir ""
 -usePolyglotBook false
 -polyglotBook ""
@@ -224,41 +229,41 @@ gnuchessx
 -analysisBell 0
 -timeOddsMode 0
 -keepLineBreaksICS false
--winWidth 491
--winHeight 588
--x 1352
--y 237
+-winWidth 507
+-winHeight 598
+-x 1269
+-y 339
 -icsUp false
--icsX 2147482296
--icsY 2147483411
+-icsX 2147482379
+-icsY 2147483309
 -icsW -2147483648
 -icsH -2147483648
--commentX -1252
--commentY 605
+-commentX -1169
+-commentY 503
 -commentW 259
 -commentH 83
--tagsX -1348
--tagsY -227
+-tagsX -1041
+-tagsY 71
 -tagsW 481
 -tagsH 379
--gameListX -447
--gameListY 179
+-gameListX -364
+-gameListY 77
 -gameListW 575
 -gameListH 300
--slaveX 2147482296
--slaveY 2147483411
+-slaveX 2147482379
+-slaveY 2147483309
 -moveHistoryUp false
--moveHistoryX -850
--moveHistoryY 711
+-moveHistoryX -767
+-moveHistoryY 609
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 2147482296
--evalGraphY 2147483411
+-evalGraphX 2147482379
+-evalGraphY 2147483309
 -evalGraphW 300
 -evalGraphH 150
 -engineOutputUp false
--engineOutputX 2147482296
--engineOutputY 2147483411
+-engineOutputX 2147482379
+-engineOutputY 2147483309
 -engineOutputW -2147483648
 -engineOutputH -2147483648
