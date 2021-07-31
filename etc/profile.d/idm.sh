@@ -31,11 +31,17 @@ if [ x"$TERM" = x"xterm" ]; then
 
 stty -ixon
 
+STARTCOLOR30='\e[0;30m';
+STARTCOLOR31='\e[0;31m';
+STARTCOLOR32='\e[0;32m';
+STARTCOLOR33='\e[0;33m';
+STARTCOLOR34='\e[0;34m';
+STARTCOLOR35='\e[0;35m';
+ENDCOLOR="\e[0m"
+export PS2='▶ '
 if [ x"$UID" != x"0" ]; then
-    export PS1="\[\033[1;32;40m\]\u\[\033[0m\]@\[\033[31;40m\]\[\033[1;34;40m\]\h\[\033[0m\]:\w:\[\033[1;33;40m\]$ \[\033[0m\]"
-    export PS2='▶ '
+    export PS1="$STARTCOLOR32\u$ENDCOLOR@$STARTCOLOR34\h$ENDCOLOR:\w$STARTCOLOR34""$""$ENDCOLOR "
 else
-    export PS1="\[\033[1;32;40m\]\u\[\033[0m\]@\[\033[31;40m\]\[\033[1;34;40m\]\h\[\033[0m\]:\w:\[\033[1;35;40m\]""#"" \[\033[0m\]"
-    export PS2='▶ '
+    export PS1="$STARTCOLOR32\u$ENDCOLOR@$STARTCOLOR35\h$ENDCOLOR:\w$STARTCOLOR33#$ENDCOLOR "
 fi
 
