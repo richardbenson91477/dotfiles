@@ -24,7 +24,9 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
-(load-theme 'fantom)
+(when (display-graphic-p)
+    (load-theme 'fantom)
+)
 
 (global-set-key "\C-x\C-m" 'compile)
 
