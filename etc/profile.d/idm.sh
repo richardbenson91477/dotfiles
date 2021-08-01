@@ -31,17 +31,11 @@ if [ x"$TERM" = x"xterm" ]; then
 
 stty -ixon
 
-STARTCOLOR30='\e[1;30m';
-STARTCOLOR31='\e[1;31m';
-STARTCOLOR32='\e[1;32m';
-STARTCOLOR33='\e[1;33m';
-STARTCOLOR34='\e[1;34m';
-STARTCOLOR35='\e[1;35m';
-ENDCOLOR="\e[0m"
-export PS2='▶ '
+# c/o ezprompt.net
 if [ x"$UID" != x"0" ]; then
-    export PS1="$STARTCOLOR32\u$ENDCOLOR"@"$STARTCOLOR34\h$ENDCOLOR":"\w$STARTCOLOR34"\$" $ENDCOLOR"
+    export PS1="\[\e[33m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\\$ "
 else
-    export PS1="$STARTCOLOR32\u$ENDCOLOR"@"$STARTCOLOR35\h$ENDCOLOR":"\w$STARTCOLOR33"\#" $ENDCOLOR"
+    export PS1="\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\\$ "
 fi
+export PS2='▶ '
 
