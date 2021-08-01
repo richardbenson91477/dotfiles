@@ -12,14 +12,12 @@ alias grep='grep --color=auto'
 alias tree='tree -C'
 alias open='gio open'
 alias cdr='cd $(realpath "$PWD")'
-#alias term='xterm -fa "Monospace-14" -g 100x33 -ls "$@"'
 alias less='less -R'
 alias ncdu='ncdu --color=dark'
 alias yay='yay --sudo doas'
 alias aurman='echo ...try \"yay\"'
 alias pacman='pacman --color=always'
 
-#set -o vi
 if [ x"$SHELL" = x"bash" ]; then
     bind "set show-all-if-ambiguous on"
     bind "set menu-complete-display-prefix on"
