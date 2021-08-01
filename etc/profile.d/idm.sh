@@ -31,11 +31,11 @@ if [ x"$TERM" = x"xterm" ]; then
 
 stty -ixon
 
-# c/o ezprompt.net
+# with help from ezprompt.net
 if [ x"$UID" != x"0" ]; then
-    export PS1="\[\e[33m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\\$ "
+    export PS1="\[\e[35m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\[\e[33m\]:$\[\e[m\] "
 else
-    export PS1="\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\\$ "
+    export PS1="\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\[\e[32m\]:#\[\e[m\] "
 fi
 export PS2='▶ '
 
