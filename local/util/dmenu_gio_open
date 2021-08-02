@@ -1,5 +1,15 @@
-#!/usr/bin/env bash
-# lol
+#!/bin/sh
 
-gio open "$@"/$(ls "$@"/ | dmenu -i -fn Hack\-14 -l 40)
+PN="$@"
+while true; do
+    FN="$PN""/"$(ls --color=no "$PN" | dmenu -fn Hack\-14 -l 40)
+
+    [ -d "$FN" ] && {
+        PN="$FN"
+        continue
+    }
+    break
+    done
+ 
+gio open "$FN"
 

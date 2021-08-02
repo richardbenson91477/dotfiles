@@ -1,0 +1,4 @@
+#!/bin/sh
+
+find -L "$@" | dmenu -fn Hack\-14 -l 40 | xargs gio open
+
