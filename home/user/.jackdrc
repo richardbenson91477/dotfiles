@@ -1,1 +1,0 @@
-/usr/bin/jackd -dalsa -r48000 -p1024 -n2 -Xseq -D -Chw:Generic_1 -Phw:Generic_1 -zs

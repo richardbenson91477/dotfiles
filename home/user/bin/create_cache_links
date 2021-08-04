@@ -1,0 +1,2 @@
+#!/bin/sh
+#ln -s /media/hd_local/Appdata-local/spotify /home/rich/.cache/spotify &
