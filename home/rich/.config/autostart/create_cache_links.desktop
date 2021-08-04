@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=create_cache_links
+Comment=create_cache_links
+Exec=/home/rich/bin/create_cache_links
+Icon=create_cache_links
+Type=Application
+X-GNOME-Autostart-enabled=true
+X-GNOME-UsesNotifications=true
+Hidden=false
+

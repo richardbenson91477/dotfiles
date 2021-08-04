@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=picom
+Comment=picom
+Exec=picom
+Icon=picom
+Type=Application
+X-GNOME-Autostart-enabled=true
+X-GNOME-UsesNotifications=true
+Hidden=true
+
