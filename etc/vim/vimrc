@@ -40,7 +40,8 @@ nnoremap <C-c><C-x> :qa!<cr>
 " misc
 nnoremap <C-g> :noh<cr>
 nnoremap <leader>b <C-o>
-inoremap ;; <esc>
+"inoremap ;; <esc>
+inoremap <C-l> <esc>
 
 " clipboard (system)
 vnoremap <leader>y "+y
