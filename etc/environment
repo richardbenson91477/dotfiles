@@ -21,3 +21,4 @@ _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defa
 VDPAU_DRIVER=radeonsi
 LIBVA_DRIVER_NAME=radeonsi
 QT_QPA_PLATFORMTHEME=qt6ct
+QT_STYLE_OVERRIDE=kvantum
