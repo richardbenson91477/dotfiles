@@ -4,11 +4,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("ae4aa4bf7418af9a2a8a0e9d172895a2f25fe725790fed3f259bba53159a8264" "8ca8fbaeaeff06ac803d7c42de1430b9765d22a439efc45b5ac572c2d9d09b16" default))
+   '("e8a0c94af8c0eeec7ae0f1633d29098ea722e5765f1e9c67b49da6f3414b9bfe" "ae4aa4bf7418af9a2a8a0e9d172895a2f25fe725790fed3f259bba53159a8264" "8ca8fbaeaeff06ac803d7c42de1430b9765d22a439efc45b5ac572c2d9d09b16" default))
  '(global-display-line-numbers-mode t)
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(fantom-theme rainbow-mode gnu-elpa-keyring-update gnu-apl-mode slime powerline org neotree mood-one-theme markdown-mode humanoid-themes gnu-elpa geiser evil color-theme-approximate)))
+   '(rainbow-delimiters fantom-theme rainbow-mode gnu-elpa-keyring-update gnu-apl-mode slime powerline org neotree mood-one-theme markdown-mode humanoid-themes gnu-elpa geiser evil color-theme-approximate)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -24,8 +24,12 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
-(when (display-graphic-p)
+(if (display-graphic-p)
     (load-theme 'fantom)
+    (progn
+        (load-theme 'humanoid-dark)
+        (print 'test)
+    )
 )
 
 (global-set-key "\C-x\C-m" 'compile)
@@ -61,4 +65,8 @@
 
 (defun gober () (interactive) (insert-char 63))
 (global-set-key "\C-c\C-c" 'gober)
+
+(require 'rainbow-delimiters)
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+
 
