@@ -17,6 +17,7 @@ alias ncdu='ncdu --color=dark'
 alias yay='yay --sudo doas'
 alias aurman='echo ...try \"yay\"'
 alias pacman='pacman --color=always'
+alias emacs='emacs -bg \#0a0a0a -fg \#a0a0a0'
 
 if [ x"$SHELL" = x"bash" ]; then
     bind "set show-all-if-ambiguous on"
@@ -31,9 +32,12 @@ stty -ixon
 
 # with help from ezprompt.net
 if [ x"$UID" != x"0" ]; then
-    export PS1="\[\e[35m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\[\e[33m\]:$\[\e[m\] "
+    # so close
+    # export PS1="\[\e[35m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\[\e[33m\]:$\[\e[m\] "
+    export PS1="\[\e[35m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\W\[\e[m\]:\[\e[33m\]\\$\[\e[m\] "
 else
-    export PS1="\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\[\e[32m\]:#\[\e[m\] "
+    #export PS1="\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\[\e[32m\]:#\[\e[m\] "
+    export PS1="\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\W\[\e[m\]:\[\e[32m\]\\$\[\e[m\] "
 fi
 export PS2='▶ '
 
