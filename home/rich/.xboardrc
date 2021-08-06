@@ -5,11 +5,11 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1628276859
--whitePieceColor #ea1d1
--blackPieceColor #994c4c
--lightSquareColor #d08080
--darkSquareColor #543c3c
+-saveDate 1628286763
+-whitePieceColor #e6acca
+-blackPieceColor #331919
+-lightSquareColor #e67373
+-darkSquareColor #704040
 -highlightSquareColor #ff0000
 -premoveHighlightColor #ff5c5c
 -movesPerSession -5000
@@ -148,8 +148,8 @@ hoichess
 "green1" -ubt false -lsc #97d8ab -dsc #4c8c5f -ub false -upf false -wpc #c6fcd7 -bpc #202020 -hsc #fff184 -phc #ff0000
 "purp2" -ubt false -lsc #b797d8 -dsc #6a4c8c -ub false -upf false -wpc #e0e0e0 -bpc #000 -hsc #ffff84 -phc #FF0000
 "magic_smoke" -ubt false -lsc #ffbfad -dsc #6b6cc9 -ub false -upf false -wpc #d1d5ff -bpc #000051 -hsc #ff005f -phc #ff6e00
-"mocha_snoz" -ubt false -lsc #d08080 -dsc #543c3c -ub false -upf false -wpc #ea1d1 -bpc #994c4c -hsc #ff0000 -phc #ff5c5c
-"mocha_blue" -ubt false -lsc #d08080 -dsc #543c3c -ub false -upf false -wpc #ea1d1 -bpc #994c4c -hsc #ff0000 -phc #ff5c5c
+"mocha_snoz" -ubt false -lsc #e67373 -dsc #704040 -ub false -upf false -wpc #e6acca -bpc #331919 -hsc #ff0000 -phc #ff5c5c
+"mocha_blue" -ubt false -lsc #86c9f3 -dsc #a16969 -ub false -upf false -wpc #b6dcf3 -bpc #000000 -hsc #ff0000 -phc #ff5c5c
 }
 -showButtonBar true
 -pgnExtendedInfo true
@@ -236,39 +236,39 @@ hoichess
 -keepLineBreaksICS false
 -winWidth 507
 -winHeight 598
--x 244
--y 200
+-x 534
+-y 158
 -icsUp false
--icsX 2147483404
--icsY 2147483448
+-icsX 2147483114
+-icsY 2147483490
 -icsW -2147483648
 -icsH -2147483648
--commentX -144
--commentY 642
+-commentX -434
+-commentY 684
 -commentW 259
 -commentH 83
--tagsX 382
--tagsY -10
+-tagsX 92
+-tagsY 32
 -tagsW 481
 -tagsH 379
--gameListX 661
--gameListY 216
+-gameListX 371
+-gameListY 258
 -gameListW 575
 -gameListH 300
--slaveX 2147483404
--slaveY 2147483448
+-slaveX 2147483114
+-slaveY 2147483490
 -moveHistoryUp false
--moveHistoryX 258
--moveHistoryY 748
+-moveHistoryX -32
+-moveHistoryY 790
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 1092
--evalGraphY 257
+-evalGraphX 802
+-evalGraphY 299
 -evalGraphW 495
 -evalGraphH 359
 -engineOutputUp false
--engineOutputX 455
--engineOutputY 296
+-engineOutputX 165
+-engineOutputY 338
 -engineOutputW 583
 -engineOutputH 427

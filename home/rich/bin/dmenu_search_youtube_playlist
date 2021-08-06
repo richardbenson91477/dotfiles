@@ -1,2 +1,0 @@
-#!/bin/sh
-exec gio open https://youtube.com/search?q="$(cat /home/rich/Documents/playlist.txt | dmenu -i -fn Hack\-14 -l 40)"

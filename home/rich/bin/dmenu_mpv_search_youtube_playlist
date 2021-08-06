@@ -1,2 +1,0 @@
-#!/bin/sh
-exec dmenu_mpv_search_youtube /home/rich/Documents/playlist.txt
