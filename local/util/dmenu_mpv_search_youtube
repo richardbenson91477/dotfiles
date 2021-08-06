@@ -1,2 +1,0 @@
-#!/bin/sh
-exec mpv_search_youtube "$(cat "$@" | dmenu -i -fn Hack\-14 -l 40)"
