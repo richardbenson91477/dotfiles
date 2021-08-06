@@ -2,7 +2,7 @@
 
 PN="$@"
 while true; do
-    BN="$(ls --color=no "$PN" | dmenu -fn Hack\-14 -l 40)"
+    BN="$(ls --color=no "$PN" | dmenu_style1)"
     if [ -z "$BN" ]; then
         break
         fi
