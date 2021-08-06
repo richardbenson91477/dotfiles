@@ -1,0 +1,15 @@
+[Default Applications]
+inode/directory=/usr/share/applications/thunar.desktop
+image/png=sxiv.desktop
+text/plain=emacs.desktop
+document/pdf=/local/share/applications/zathura.desktop
+document/ps=/local/share/applications/zathura.desktop
+application/pdf=org.pwmt.zathura-pdf-poppler.desktop
+
+[Added Associations]
+inode/directory=thunar.desktop;
+image/png=sxiv.desktop;
+text/x-csrc=emacs.desktop;
+application/vnd.oasis.opendocument.spreadsheet=libreoffice.desktop;
+application/pdf=org.pwmt.zathura-pdf-poppler.desktop;
+application/postscript=org.pwmt.zathura-ps.desktop;
