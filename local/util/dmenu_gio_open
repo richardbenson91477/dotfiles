@@ -2,14 +2,24 @@
 
 PN="$@"
 while true; do
-    FN="$PN""/"$(ls --color=no "$PN" | dmenu -fn Hack\-14 -l 40)
+    BN="$(ls --color=no "$PN" | dmenu -fn Hack\-14 -l 40)"
+    if [ -z "$BN" ]; then
+        break
+        fi
 
-    [ -d "$FN" ] && {
+    if [ ${BN:0:1} == "/" ]; then
+        PN="$BN"
+        continue
+        fi
+
+    FN="$PN"/"$BN"
+    if [ -d "$FN" ] || [ ${BN:0:1} == "/" ]; then
         PN="$FN"
         continue
-    }
+        fi
+
+    gio open "$FN"
     break
+    
     done
  
-gio open "$FN"
-
