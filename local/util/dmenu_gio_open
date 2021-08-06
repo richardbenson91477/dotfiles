@@ -8,8 +8,12 @@ while true; do
         fi
 
     if [ ${BN:0:1} == "/" ]; then
-        PN="$BN"
-        continue
+        if [ -d "$BN" ]; then
+            PN="$BN"
+            continue
+            fi
+        gio open "$BN"
+        break
         fi
 
     FN="$PN"/"$BN"
@@ -20,6 +24,5 @@ while true; do
 
     gio open "$FN"
     break
-    
     done
  
