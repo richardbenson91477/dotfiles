@@ -5,13 +5,13 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1628290204
--whitePieceColor #b6dcf3
--blackPieceColor #000000
--lightSquareColor #86c9f3
--darkSquareColor #a16969
--highlightSquareColor #ff0000
--premoveHighlightColor #ff5c5c
+-saveDate 1628311450
+-whitePieceColor #ca99ff
+-blackPieceColor #660036
+-lightSquareColor #9a5ae1
+-darkSquareColor #e05aa0
+-highlightSquareColor #f0f0a0
+-premoveHighlightColor #ff99eb
 -movesPerSession -5000
 -variations true
 -appendPV true
@@ -150,6 +150,7 @@ hoichess
 "magic_smoke" -ubt false -lsc #ffbfad -dsc #6b6cc9 -ub false -upf false -wpc #d1d5ff -bpc #000051 -hsc #ff005f -phc #ff6e00
 "mocha_snoz" -ubt false -lsc #e67373 -dsc #704040 -ub false -upf false -wpc #e6acca -bpc #331919 -hsc #ff0000 -phc #ff5c5c
 "mocha_blue" -ubt false -lsc #86c9f3 -dsc #a16969 -ub false -upf false -wpc #b6dcf3 -bpc #000000 -hsc #ff0000 -phc #ff5c5c
+"the_twist" -ubt false -lsc #9a5ae1 -dsc #e05aa0 -ub false -upf false -wpc #ca99ff -bpc #660036 -hsc #f0f0a0 -phc #ff99eb
 }
 -showButtonBar true
 -pgnExtendedInfo true
@@ -234,41 +235,41 @@ hoichess
 -analysisBell 0
 -timeOddsMode 0
 -keepLineBreaksICS false
--winWidth 507
--winHeight 598
--x 534
--y 158
+-winWidth 519
+-winHeight 631
+-x 571
+-y 138
 -icsUp false
--icsX 2147483114
--icsY 2147483490
+-icsX 2147483077
+-icsY 2147483510
 -icsW -2147483648
 -icsH -2147483648
--commentX -434
--commentY 684
+-commentX -471
+-commentY 704
 -commentW 259
 -commentH 83
--tagsX 92
--tagsY 32
+-tagsX 55
+-tagsY 52
 -tagsW 481
 -tagsH 379
--gameListX 371
--gameListY 258
+-gameListX 334
+-gameListY 278
 -gameListW 575
 -gameListH 300
--slaveX 2147483114
--slaveY 2147483490
+-slaveX 2147483077
+-slaveY 2147483510
 -moveHistoryUp false
--moveHistoryX -32
--moveHistoryY 790
+-moveHistoryX -69
+-moveHistoryY 810
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 802
--evalGraphY 299
+-evalGraphX 765
+-evalGraphY 319
 -evalGraphW 495
 -evalGraphH 359
 -engineOutputUp false
--engineOutputX 165
--engineOutputY 338
+-engineOutputX 128
+-engineOutputY 358
 -engineOutputW 583
 -engineOutputH 427
