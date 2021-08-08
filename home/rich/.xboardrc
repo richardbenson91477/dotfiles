@@ -5,11 +5,11 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1628311450
--whitePieceColor #ca99ff
--blackPieceColor #660036
--lightSquareColor #9a5ae1
--darkSquareColor #e05aa0
+-saveDate 1628393057
+-whitePieceColor #d8b3ff
+-blackPieceColor #4c0028
+-lightSquareColor #bd80ff
+-darkSquareColor #e04395
 -highlightSquareColor #f0f0a0
 -premoveHighlightColor #ff99eb
 -movesPerSession -5000
@@ -148,9 +148,10 @@ hoichess
 "green1" -ubt false -lsc #97d8ab -dsc #4c8c5f -ub false -upf false -wpc #c6fcd7 -bpc #202020 -hsc #fff184 -phc #ff0000
 "purp2" -ubt false -lsc #b797d8 -dsc #6a4c8c -ub false -upf false -wpc #e0e0e0 -bpc #000 -hsc #ffff84 -phc #FF0000
 "magic_smoke" -ubt false -lsc #ffbfad -dsc #6b6cc9 -ub false -upf false -wpc #d1d5ff -bpc #000051 -hsc #ff005f -phc #ff6e00
-"mocha_snoz" -ubt false -lsc #e67373 -dsc #704040 -ub false -upf false -wpc #e6acca -bpc #331919 -hsc #ff0000 -phc #ff5c5c
+"mocha_snoz" -ubt false -lsc #e67373 -dsc #704040 -ub false -upf false -wpc #e6acca -bpc #000000 -hsc #ff0000 -phc #ff5c5c
 "mocha_blue" -ubt false -lsc #86c9f3 -dsc #a16969 -ub false -upf false -wpc #b6dcf3 -bpc #000000 -hsc #ff0000 -phc #ff5c5c
-"the_twist" -ubt false -lsc #9a5ae1 -dsc #e05aa0 -ub false -upf false -wpc #ca99ff -bpc #660036 -hsc #f0f0a0 -phc #ff99eb
+"the_twist" -ubt false -lsc #bd80ff -dsc #e04395 -ub false -upf false -wpc #d8b3ff -bpc #660036 -hsc #f0f0a0 -phc #ff99eb
+
 }
 -showButtonBar true
 -pgnExtendedInfo true
@@ -235,41 +236,41 @@ hoichess
 -analysisBell 0
 -timeOddsMode 0
 -keepLineBreaksICS false
--winWidth 519
--winHeight 631
--x 571
--y 138
+-winWidth 507
+-winHeight 615
+-x 1003
+-y 195
 -icsUp false
--icsX 2147483077
--icsY 2147483510
+-icsX 2147482645
+-icsY 2147483453
 -icsW -2147483648
 -icsH -2147483648
--commentX -471
--commentY 704
+-commentX -903
+-commentY 647
 -commentW 259
 -commentH 83
--tagsX 55
--tagsY 52
+-tagsX -377
+-tagsY -5
 -tagsW 481
 -tagsH 379
--gameListX 334
--gameListY 278
+-gameListX -98
+-gameListY 221
 -gameListW 575
 -gameListH 300
--slaveX 2147483077
--slaveY 2147483510
+-slaveX 2147482645
+-slaveY 2147483453
 -moveHistoryUp false
--moveHistoryX -69
--moveHistoryY 810
+-moveHistoryX -501
+-moveHistoryY 753
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 765
--evalGraphY 319
+-evalGraphX 333
+-evalGraphY 262
 -evalGraphW 495
 -evalGraphH 359
 -engineOutputUp false
--engineOutputX 128
--engineOutputY 358
+-engineOutputX -304
+-engineOutputY 301
 -engineOutputW 583
 -engineOutputH 427
