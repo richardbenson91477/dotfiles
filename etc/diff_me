@@ -2,7 +2,9 @@
 IFS='
 '
 for f in $(find . -type f -not -name "diff_me"); do
-    echo "*** $f ***"
+    if [ ! -z "$1" ]; then
+        echo "*** $f ***"
+        fi
     diff "$f" /etc/"$f"
-    done |\
-  less
+    done
+

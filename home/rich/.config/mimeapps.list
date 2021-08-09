@@ -6,6 +6,7 @@ document/pdf=/local/share/applications/zathura.desktop
 document/ps=/local/share/applications/zathura.desktop
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop
 application/x-blender=blender.desktop
+image/svg+xml=org.inkscape.Inkscape.desktop
 
 [Added Associations]
 inode/directory=thunar.desktop;
@@ -16,3 +17,4 @@ application/pdf=org.pwmt.zathura-pdf-poppler.desktop;
 application/postscript=org.pwmt.zathura-ps.desktop;
 text/x-makefile=emacs.desktop;
 application/x-blender=blender.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;

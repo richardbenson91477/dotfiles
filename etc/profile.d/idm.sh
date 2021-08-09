@@ -32,11 +32,8 @@ stty -ixon
 
 # with help from ezprompt.net
 if [ x"$UID" != x"0" ]; then
-    # so close
-    # export PS1="\[\e[35m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\[\e[33m\]:$\[\e[m\] "
     export PS1="\[\e[35m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\W\[\e[m\]:\[\e[33m\]\\$\[\e[m\] "
 else
-    #export PS1="\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\[\e[32m\]:#\[\e[m\] "
     export PS1="\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[34m\]\W\[\e[m\]:\[\e[32m\]\\$\[\e[m\] "
 fi
 export PS2='▶ '
