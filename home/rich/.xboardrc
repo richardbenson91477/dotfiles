@@ -5,13 +5,13 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1628393057
--whitePieceColor #d8b3ff
--blackPieceColor #4c0028
--lightSquareColor #bd80ff
--darkSquareColor #e04395
--highlightSquareColor #f0f0a0
--premoveHighlightColor #ff99eb
+-saveDate 1628720739
+-whitePieceColor #d1d5ff
+-blackPieceColor #000051
+-lightSquareColor #ffbfad
+-darkSquareColor #6b6cc9
+-highlightSquareColor #ff005f
+-premoveHighlightColor #ff6e00
 -movesPerSession -5000
 -variations true
 -appendPV true
@@ -150,8 +150,7 @@ hoichess
 "magic_smoke" -ubt false -lsc #ffbfad -dsc #6b6cc9 -ub false -upf false -wpc #d1d5ff -bpc #000051 -hsc #ff005f -phc #ff6e00
 "mocha_snoz" -ubt false -lsc #e67373 -dsc #704040 -ub false -upf false -wpc #e6acca -bpc #000000 -hsc #ff0000 -phc #ff5c5c
 "mocha_blue" -ubt false -lsc #86c9f3 -dsc #a16969 -ub false -upf false -wpc #b6dcf3 -bpc #000000 -hsc #ff0000 -phc #ff5c5c
-"the_twist" -ubt false -lsc #bd80ff -dsc #e04395 -ub false -upf false -wpc #d8b3ff -bpc #660036 -hsc #f0f0a0 -phc #ff99eb
-
+"the_twist" -ubt false -lsc #bd80ff -dsc #a6316e -ub false -upf false -wpc #d8b3ff -bpc #4c0028 -hsc #f0f0a0 -phc #ff99eb
 }
 -showButtonBar true
 -pgnExtendedInfo true
@@ -237,40 +236,40 @@ hoichess
 -timeOddsMode 0
 -keepLineBreaksICS false
 -winWidth 507
--winHeight 615
--x 1003
--y 195
+-winHeight 598
+-x 666
+-y 142
 -icsUp false
--icsX 2147482645
--icsY 2147483453
+-icsX 2147482982
+-icsY 2147483506
 -icsW -2147483648
 -icsH -2147483648
--commentX -903
--commentY 647
+-commentX -566
+-commentY 700
 -commentW 259
 -commentH 83
--tagsX -377
--tagsY -5
+-tagsX -40
+-tagsY 48
 -tagsW 481
 -tagsH 379
--gameListX -98
--gameListY 221
+-gameListX 239
+-gameListY 274
 -gameListW 575
 -gameListH 300
--slaveX 2147482645
--slaveY 2147483453
+-slaveX 2147482982
+-slaveY 2147483506
 -moveHistoryUp false
--moveHistoryX -501
--moveHistoryY 753
+-moveHistoryX -164
+-moveHistoryY 806
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 333
--evalGraphY 262
+-evalGraphX 670
+-evalGraphY 315
 -evalGraphW 495
 -evalGraphH 359
 -engineOutputUp false
--engineOutputX -304
--engineOutputY 301
+-engineOutputX 33
+-engineOutputY 354
 -engineOutputW 583
 -engineOutputH 427
