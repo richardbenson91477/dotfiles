@@ -8,6 +8,9 @@ application/pdf=org.pwmt.zathura-pdf-poppler.desktop
 application/x-blender=blender.desktop
 image/svg+xml=org.inkscape.Inkscape.desktop
 image/jpeg=sxiv.desktop
+application/octet-stream=tuxguitar.desktop
+x-scheme-handler/http=xfce4-web-browser.desktop
+x-scheme-handler/https=xfce4-web-browser.desktop
 
 [Added Associations]
 inode/directory=thunar.desktop;
@@ -20,3 +23,8 @@ text/x-makefile=emacs.desktop;
 application/x-blender=blender.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
 image/jpeg=sxiv.desktop;
+application/octet-stream=tuxguitar.desktop;
+audio/midi=userapp-drumstick-guiplayer-EKP170.desktop;
+x-scheme-handler/http=xfce4-web-browser.desktop;
+x-scheme-handler/https=xfce4-web-browser.desktop;
+
