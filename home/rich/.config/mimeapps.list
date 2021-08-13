@@ -9,8 +9,16 @@ application/x-blender=blender.desktop
 image/svg+xml=org.inkscape.Inkscape.desktop
 image/jpeg=sxiv.desktop
 application/octet-stream=tuxguitar.desktop
-x-scheme-handler/http=xfce4-web-browser.desktop
-x-scheme-handler/https=xfce4-web-browser.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/chrome=firefox.desktop
+text/html=firefox.desktop
+application/x-extension-htm=firefox.desktop
+application/x-extension-html=firefox.desktop
+application/x-extension-shtml=firefox.desktop
+application/xhtml+xml=firefox.desktop
+application/x-extension-xhtml=firefox.desktop
+application/x-extension-xht=firefox.desktop
 
 [Added Associations]
 inode/directory=thunar.desktop;
@@ -25,6 +33,5 @@ image/svg+xml=org.inkscape.Inkscape.desktop;
 image/jpeg=sxiv.desktop;
 application/octet-stream=tuxguitar.desktop;
 audio/midi=userapp-drumstick-guiplayer-EKP170.desktop;
-x-scheme-handler/http=xfce4-web-browser.desktop;
-x-scheme-handler/https=xfce4-web-browser.desktop;
-
+x-scheme-handler/http=xfce4-web-browser.desktop;firefox.desktop;
+x-scheme-handler/https=xfce4-web-browser.desktop;firefox.desktop;
