@@ -18,6 +18,9 @@
  ;; If there is more than one, they won't work right.
  )
 
+(set-language-environment "UTF-8")
+(set-default-coding-systems 'utf-8)
+
 (tool-bar-mode -1)
 
 (setq inferior-lisp-program "sbcl")
