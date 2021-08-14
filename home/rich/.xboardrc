@@ -5,11 +5,11 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1628979090
--whitePieceColor #eed1d1
--blackPieceColor #351a1a
--lightSquareColor #cc9999
--darkSquareColor #994c4c
+-saveDate 1628979157
+-whitePieceColor #bcbceb
+-blackPieceColor #1e1e21
+-lightSquareColor #8594cc
+-darkSquareColor #585766
 -highlightSquareColor #ff0000
 -premoveHighlightColor #ff5c5c
 -movesPerSession -5000
@@ -117,7 +117,7 @@
 "kc" -icshost alanimus.com -icshelper timeseal
 }
 -recentEngines 1
--recentEngineList {gnuchess -x
+-recentEngineList {fairymax
 }
 -firstChessProgramNames {fairymax
 sjaakii
@@ -145,8 +145,8 @@ hoichess
 "magic_smoke" -ubt false -lsc #ffbfad -dsc #6b6cc9 -ub false -upf false -wpc #d1d5ff -bpc #000051 -hsc #ff005f -phc #ff6e00
 "mocha_snoz" -ubt false -lsc #e67373 -dsc #704040 -ub false -upf false -wpc #e6acca -bpc #000000 -hsc #ff0000 -phc #ff5c5c
 "the_twist" -ubt false -lsc #bd80ff -dsc #a6316e -ub false -upf false -wpc #d8b3ff -bpc #4c0028 -hsc #f0f0a0 -phc #ff99eb
-"mocha_blue" -ubt false -lsc #6686ff -dsc #994c4c -ub false -upf false -wpc #d19999 -bpc #000000 -hsc #ff0000 -phc #ff5c5c
 "cocoa" -ubt false -lsc #cc9999 -dsc #994c4c -ub false -upf false -wpc #eed1d1 -bpc #351a1a -hsc #ff0000 -phc #ff5c5c
+"blue_steel" -ubt false -lsc #8594cc -dsc #585766 -ub false -upf false -wpc #bcbceb -bpc #1e1e21 -hsc #ff0000 -phc #ff5c5c
 }
 -showButtonBar true
 -pgnExtendedInfo true
@@ -233,39 +233,39 @@ hoichess
 -keepLineBreaksICS false
 -winWidth 507
 -winHeight 598
--x 713
--y 207
+-x 582
+-y 188
 -icsUp false
--icsX 2147482935
--icsY 2147483441
+-icsX 2147483066
+-icsY 2147483460
 -icsW -2147483648
 -icsH -2147483648
--commentX -613
--commentY 635
+-commentX -482
+-commentY 654
 -commentW 259
 -commentH 83
--tagsX -87
--tagsY -17
+-tagsX 44
+-tagsY 2
 -tagsW 481
 -tagsH 379
--gameListX 192
--gameListY 209
+-gameListX 323
+-gameListY 228
 -gameListW 575
 -gameListH 300
--slaveX 2147482935
--slaveY 2147483441
+-slaveX 2147483066
+-slaveY 2147483460
 -moveHistoryUp false
--moveHistoryX -211
--moveHistoryY 741
+-moveHistoryX -80
+-moveHistoryY 760
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 623
--evalGraphY 250
+-evalGraphX 754
+-evalGraphY 269
 -evalGraphW 495
 -evalGraphH 359
 -engineOutputUp false
--engineOutputX -14
--engineOutputY 289
+-engineOutputX 117
+-engineOutputY 308
 -engineOutputW 583
 -engineOutputH 427
