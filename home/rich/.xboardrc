@@ -5,13 +5,13 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1628820440
--whitePieceColor #d1d5ff
--blackPieceColor #000051
--lightSquareColor #ffbfad
--darkSquareColor #6b6cc9
--highlightSquareColor #ff005f
--premoveHighlightColor #ff6e00
+-saveDate 1628979090
+-whitePieceColor #eed1d1
+-blackPieceColor #351a1a
+-lightSquareColor #cc9999
+-darkSquareColor #994c4c
+-highlightSquareColor #ff0000
+-premoveHighlightColor #ff5c5c
 -movesPerSession -5000
 -variations true
 -appendPV true
@@ -116,17 +116,12 @@
 "icc" -icshost chessclub.com -icshelper timestamp
 "kc" -icshost alanimus.com -icshelper timeseal
 }
--recentEngines 5
--recentEngineList {fairymax
-gnuchess
-hoichess
-sjaakii
-gnuchess --xboard
+-recentEngines 1
+-recentEngineList {gnuchess -x
 }
 -firstChessProgramNames {fairymax
 sjaakii
 hoichess
-"gnuchess --xboard"
 "ghost -xboard"
 "gnuchess -x"
 }
@@ -149,8 +144,9 @@ hoichess
 "purp2" -ubt false -lsc #b797d8 -dsc #6a4c8c -ub false -upf false -wpc #e0e0e0 -bpc #000 -hsc #ffff84 -phc #FF0000
 "magic_smoke" -ubt false -lsc #ffbfad -dsc #6b6cc9 -ub false -upf false -wpc #d1d5ff -bpc #000051 -hsc #ff005f -phc #ff6e00
 "mocha_snoz" -ubt false -lsc #e67373 -dsc #704040 -ub false -upf false -wpc #e6acca -bpc #000000 -hsc #ff0000 -phc #ff5c5c
-"mocha_blue" -ubt false -lsc #86c9f3 -dsc #a16969 -ub false -upf false -wpc #b6dcf3 -bpc #000000 -hsc #ff0000 -phc #ff5c5c
 "the_twist" -ubt false -lsc #bd80ff -dsc #a6316e -ub false -upf false -wpc #d8b3ff -bpc #4c0028 -hsc #f0f0a0 -phc #ff99eb
+"mocha_blue" -ubt false -lsc #6686ff -dsc #994c4c -ub false -upf false -wpc #d19999 -bpc #000000 -hsc #ff0000 -phc #ff5c5c
+"cocoa" -ubt false -lsc #cc9999 -dsc #994c4c -ub false -upf false -wpc #eed1d1 -bpc #351a1a -hsc #ff0000 -phc #ff5c5c
 }
 -showButtonBar true
 -pgnExtendedInfo true
@@ -237,39 +233,39 @@ hoichess
 -keepLineBreaksICS false
 -winWidth 507
 -winHeight 598
--x 1061
--y 210
+-x 713
+-y 207
 -icsUp false
--icsX 2147482587
--icsY 2147483438
+-icsX 2147482935
+-icsY 2147483441
 -icsW -2147483648
 -icsH -2147483648
--commentX -961
--commentY 632
+-commentX -613
+-commentY 635
 -commentW 259
 -commentH 83
--tagsX -435
--tagsY -20
+-tagsX -87
+-tagsY -17
 -tagsW 481
 -tagsH 379
--gameListX -156
--gameListY 206
+-gameListX 192
+-gameListY 209
 -gameListW 575
 -gameListH 300
--slaveX 2147482587
--slaveY 2147483438
+-slaveX 2147482935
+-slaveY 2147483441
 -moveHistoryUp false
--moveHistoryX -559
--moveHistoryY 738
+-moveHistoryX -211
+-moveHistoryY 741
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 275
--evalGraphY 247
+-evalGraphX 623
+-evalGraphY 250
 -evalGraphW 495
 -evalGraphH 359
 -engineOutputUp false
--engineOutputX -362
--engineOutputY 286
+-engineOutputX -14
+-engineOutputY 289
 -engineOutputW 583
 -engineOutputH 427
