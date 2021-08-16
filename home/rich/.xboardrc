@@ -5,14 +5,14 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1628979157
--whitePieceColor #bcbceb
--blackPieceColor #1e1e21
--lightSquareColor #8594cc
--darkSquareColor #585766
--highlightSquareColor #ff0000
+-saveDate 1629088786
+-whitePieceColor #e6acca
+-blackPieceColor #000000
+-lightSquareColor #e68585
+-darkSquareColor #704040
+-highlightSquareColor #ff4a4a
 -premoveHighlightColor #ff5c5c
--movesPerSession -5000
+-movesPerSession -3000
 -variations true
 -appendPV true
 -internetChessServerInputBox false
@@ -142,11 +142,11 @@ hoichess
 "blue1" -ubt false -lsc #97add8 -dsc #4c628c -ub false -upf false -wpc #c6e9fc -bpc #202020 -hsc #ffc984 -phc #FF0000
 "green1" -ubt false -lsc #97d8ab -dsc #4c8c5f -ub false -upf false -wpc #c6fcd7 -bpc #202020 -hsc #fff184 -phc #ff0000
 "purp2" -ubt false -lsc #b797d8 -dsc #6a4c8c -ub false -upf false -wpc #e0e0e0 -bpc #000 -hsc #ffff84 -phc #FF0000
-"magic_smoke" -ubt false -lsc #ffbfad -dsc #6b6cc9 -ub false -upf false -wpc #d1d5ff -bpc #000051 -hsc #ff005f -phc #ff6e00
-"mocha_snoz" -ubt false -lsc #e67373 -dsc #704040 -ub false -upf false -wpc #e6acca -bpc #000000 -hsc #ff0000 -phc #ff5c5c
 "the_twist" -ubt false -lsc #bd80ff -dsc #a6316e -ub false -upf false -wpc #d8b3ff -bpc #4c0028 -hsc #f0f0a0 -phc #ff99eb
-"cocoa" -ubt false -lsc #cc9999 -dsc #994c4c -ub false -upf false -wpc #eed1d1 -bpc #351a1a -hsc #ff0000 -phc #ff5c5c
-"blue_steel" -ubt false -lsc #8594cc -dsc #585766 -ub false -upf false -wpc #bcbceb -bpc #1e1e21 -hsc #ff0000 -phc #ff5c5c
+"blue_steel" -ubt false -lsc #8594cc -dsc #585766 -ub false -upf false -wpc #bcbceb -bpc #1e1e21 -hsc #e6e6e6 -phc #5c7fff
+"cocoa" -ubt false -lsc #cc9999 -dsc #994c4c -ub false -upf false -wpc #eed1d1 -bpc #351a1a -hsc #d9d9d9 -phc #ff5c5c
+"magic_smoke" -ubt false -lsc #ffbfad -dsc #6b6cc9 -ub false -upf false -wpc #d1d5ff -bpc #000051 -hsc #ff754e -phc #e36845
+"mocha_snoz" -ubt false -lsc #e68585 -dsc #704040 -ub false -upf false -wpc #e6acca -bpc #000000 -hsc #ff4a4a -phc #ff5c5c
 }
 -showButtonBar true
 -pgnExtendedInfo true
@@ -232,40 +232,40 @@ hoichess
 -timeOddsMode 0
 -keepLineBreaksICS false
 -winWidth 507
--winHeight 598
--x 582
--y 188
+-winHeight 615
+-x 1010
+-y 202
 -icsUp false
--icsX 2147483066
--icsY 2147483460
+-icsX 2147482638
+-icsY 2147483446
 -icsW -2147483648
 -icsH -2147483648
--commentX -482
--commentY 654
+-commentX -910
+-commentY 640
 -commentW 259
 -commentH 83
--tagsX 44
--tagsY 2
+-tagsX -384
+-tagsY -12
 -tagsW 481
 -tagsH 379
--gameListX 323
--gameListY 228
+-gameListX -105
+-gameListY 214
 -gameListW 575
 -gameListH 300
--slaveX 2147483066
--slaveY 2147483460
+-slaveX 2147482638
+-slaveY 2147483446
 -moveHistoryUp false
--moveHistoryX -80
--moveHistoryY 760
+-moveHistoryX -508
+-moveHistoryY 746
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 754
--evalGraphY 269
+-evalGraphX 326
+-evalGraphY 255
 -evalGraphW 495
 -evalGraphH 359
 -engineOutputUp false
--engineOutputX 117
--engineOutputY 308
+-engineOutputX -311
+-engineOutputY 294
 -engineOutputW 583
 -engineOutputH 427
