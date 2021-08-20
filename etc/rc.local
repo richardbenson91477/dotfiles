@@ -1,5 +1,7 @@
 #!/bin/sh
 
+/local/rescue/busybox syslogd
+
 echo 1 > /sys/devices/system/cpu/microcode/reload
 
 irqbalance &
