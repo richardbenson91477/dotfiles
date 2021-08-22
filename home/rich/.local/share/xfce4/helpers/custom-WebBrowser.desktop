@@ -1,0 +1,12 @@
+[Desktop Entry]
+NoDisplay=true
+Version=1.0
+Encoding=UTF-8
+Type=X-XFCE-Helper
+X-XFCE-Category=WebBrowser
+X-XFCE-CommandsWithParameter=qutebrowser -B /home/rich/.cache/qutebrowser "%s"
+Exec=qutebrowser -B /home/rich/.cache/qutebrowser "%s"
+Icon=qutebrowser
+Name=qutebrowser
+X-XFCE-Commands=qutebrowser
+
