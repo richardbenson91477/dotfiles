@@ -5,13 +5,13 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1629088786
--whitePieceColor #e6acca
--blackPieceColor #000000
--lightSquareColor #e68585
--darkSquareColor #704040
--highlightSquareColor #ff4a4a
--premoveHighlightColor #ff5c5c
+-saveDate 1629595337
+-whitePieceColor #eed6d1
+-blackPieceColor #351e1a
+-lightSquareColor #cca199
+-darkSquareColor #99584c
+-highlightSquareColor #d9d9d9
+-premoveHighlightColor #ff6f5c
 -movesPerSession -3000
 -variations true
 -appendPV true
@@ -47,7 +47,7 @@
 -periodicUpdates true
 -popupExitMessage true
 -popupMoveErrors false
--boardSize Moderate
+-boardSize Medium
 -alwaysOnTop false
 -autoCallFlag false
 -autoComment false
@@ -144,9 +144,9 @@ hoichess
 "purp2" -ubt false -lsc #b797d8 -dsc #6a4c8c -ub false -upf false -wpc #e0e0e0 -bpc #000 -hsc #ffff84 -phc #FF0000
 "the_twist" -ubt false -lsc #bd80ff -dsc #a6316e -ub false -upf false -wpc #d8b3ff -bpc #4c0028 -hsc #f0f0a0 -phc #ff99eb
 "blue_steel" -ubt false -lsc #8594cc -dsc #585766 -ub false -upf false -wpc #bcbceb -bpc #1e1e21 -hsc #e6e6e6 -phc #5c7fff
-"cocoa" -ubt false -lsc #cc9999 -dsc #994c4c -ub false -upf false -wpc #eed1d1 -bpc #351a1a -hsc #d9d9d9 -phc #ff5c5c
 "magic_smoke" -ubt false -lsc #ffbfad -dsc #6b6cc9 -ub false -upf false -wpc #d1d5ff -bpc #000051 -hsc #ff754e -phc #e36845
 "mocha_snoz" -ubt false -lsc #e68585 -dsc #704040 -ub false -upf false -wpc #e6acca -bpc #000000 -hsc #ff4a4a -phc #ff5c5c
+"cocoa" -ubt false -lsc #cca199 -dsc #99584c -ub false -upf false -wpc #eed6d1 -bpc #351e1a -hsc #d9d9d9 -phc #ff6f5c
 }
 -showButtonBar true
 -pgnExtendedInfo true
@@ -231,41 +231,41 @@ hoichess
 -analysisBell 0
 -timeOddsMode 0
 -keepLineBreaksICS false
--winWidth 507
--winHeight 615
--x 1010
--y 202
+-winWidth 543
+-winHeight 651
+-x 1095
+-y 236
 -icsUp false
--icsX 2147482638
--icsY 2147483446
+-icsX 2147482553
+-icsY 2147483412
 -icsW -2147483648
 -icsH -2147483648
--commentX -910
--commentY 640
+-commentX -995
+-commentY 606
 -commentW 259
 -commentH 83
--tagsX -384
--tagsY -12
+-tagsX -469
+-tagsY -46
 -tagsW 481
 -tagsH 379
--gameListX -105
--gameListY 214
+-gameListX -190
+-gameListY 180
 -gameListW 575
 -gameListH 300
--slaveX 2147482638
--slaveY 2147483446
+-slaveX 2147482553
+-slaveY 2147483412
 -moveHistoryUp false
--moveHistoryX -508
--moveHistoryY 746
+-moveHistoryX -593
+-moveHistoryY 712
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 326
--evalGraphY 255
+-evalGraphX 241
+-evalGraphY 221
 -evalGraphW 495
 -evalGraphH 359
 -engineOutputUp false
--engineOutputX -311
--engineOutputY 294
+-engineOutputX -396
+-engineOutputY 260
 -engineOutputW 583
 -engineOutputH 427
