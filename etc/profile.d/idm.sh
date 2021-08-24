@@ -18,7 +18,6 @@ alias yay='yay --sudo doas'
 alias aurman='echo ...try \"yay\"'
 alias pacman='pacman --color=always'
 alias emacs='emacs -bg \#0a0a0a -fg \#a0a0a0'
-alias qutebrowser="qutebrowser -B $HOME/.cache/qutebrowser"
 
 if [ x"$SHELL" = x"bash" ]; then
     bind "set show-all-if-ambiguous on"
