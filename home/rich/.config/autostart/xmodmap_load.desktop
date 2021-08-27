@@ -1,9 +1,0 @@
-
-[Desktop Entry]
-Name=xmodmap_load
-Comment=xmodmap_load
-Exec=xmodmap_load
-Icon=xmodmap_load
-Type=Application
-X-GNOME-Autostart-enabled=true
-X-GNOME-UsesNotifications=true

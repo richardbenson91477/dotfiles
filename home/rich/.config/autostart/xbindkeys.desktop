@@ -1,9 +1,0 @@
-
-[Desktop Entry]
-Name=xbindkeys
-Comment=xbindkeys
-Exec=xbindkeys
-Icon=xbindkeys
-Type=Application
-X-GNOME-Autostart-enabled=true
-X-GNOME-UsesNotifications=true
