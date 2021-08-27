@@ -1,19 +1,8 @@
 clear lock
-!clear control
-!clear shift
-!clear mod3
-!clear mod4
+clear control
 ! actually Caps lock
 keycode 66 = Control_L
-! actually Control_R
-!  keycode 105 = Escape
-! actually Shift_R
-!  keycode 62 = Escape
-!actually Super_R
-keycode 108 = Mode_switch
+!actually Control_R
+keycode 105 = Mode_switch
 add control = Control_L
-!add shift = Shift_L
-!add shift = Shift_R
-!add mod3 = Hyper_L Hyper_R
-!add mod4 = Super_L Super_R
 pointer = 1 2 3 4 5 8 9 6 7 10
