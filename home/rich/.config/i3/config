@@ -28,8 +28,9 @@ bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
 bindsym $mod+Shift+4 move container to workspace number $ws4
-# -
-# =
+# minus
+# equals
+# backspace
 
 bindsym $mod+Tab focus mode_toggle
 bindsym $mod+q kill
@@ -47,9 +48,9 @@ bindsym $mod+t exec kitty
 # i
 # o
 # p
-# [
-# ]
-# \
+bindsym $mod+bracketleft exec xrandr_brightness_down
+bindsym $mod+bracketright exec xrandr_brightness_up
+bindsym $mod+backslash exec xrandr_brightness 1.0
 
 bindsym $mod+a gaps inner current minus 5
 bindsym $mod+s gaps inner current plus 5
