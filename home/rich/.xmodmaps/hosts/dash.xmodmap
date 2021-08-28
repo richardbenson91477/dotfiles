@@ -1,8 +1,14 @@
 clear lock
 clear control
+clear mod1
+clear mod4
 ! actually Caps lock
 keycode 66 = Control_L
 !actually Control_R
 keycode 105 = Mode_switch
+!actually Alt_R
+keycode 108 = Super_R
 add control = Control_L
+add mod1 = Alt_L
+add mod4 = Super_L Super_R
 pointer = 1 2 3 4 5 8 9 6 7 10

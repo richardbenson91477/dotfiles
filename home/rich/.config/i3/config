@@ -13,14 +13,14 @@ smart_gaps on
 # screen before suspend. Use loginctl lock-session to lock your screen.
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# Use Mouse+$mod to drag floating windows to their wanted position
+# Use rodent+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+bindsym $mod+Tab focus left
 bindsym $mod+q kill
 bindsym $mod+w exec librewolf
-bindsym $mod+semicolon exec dmenu_abstract
+bindsym $mod+e exec dmenu_run
 bindsym $mod+r mode "resize"
-bindsym $mod+Return exec kitty
 
 bindsym $mod+a gaps inner current minus 5
 bindsym $mod+s gaps inner current plus 5
@@ -39,15 +39,18 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
+bindsym $mod+semicolon exec dmenu_abstract
+bindsym $mod+Return exec kitty
+
 bindsym $mod+v focus mode_toggle
 bindsym $mod+b floating toggle
-bindsym $mod+n split h
-bindsym $mod+m split v
+bindsym $mod+n split v
+bindsym $mod+m split h
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+q exec i3-msg exit
 #bindsym $mod+Shift+w restart
-bindsym $mod+Shift+w reload
+bindsym $mod+Shift+w exec i3-msg reload
 
 # change container layout (stacked, tabbed, toggle split)
 #bindsym $mod+s layout stacking
@@ -78,7 +81,7 @@ bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
 bindsym $mod+Shift+4 move container to workspace number $ws4
 
-# resize window (you can also use the mouse for that)
+# resize window (you can also use the rodent for that)
 mode "resize" {
         bindsym h resize shrink width 10 px or 10 ppt
         bindsym j resize grow height 10 px or 10 ppt
