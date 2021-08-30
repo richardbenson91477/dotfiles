@@ -15,6 +15,7 @@ client.urgent           #901010 #202020 #ffffff #900000   #a02020
 client.placeholder      #000000 #202020 #ffffff #000000   #000000
 client.background       #202020
 
+# `
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -37,8 +38,6 @@ bindsym $mod+w exec librewolf
 bindsym $mod+e exec kitty nnn
 #bindsym $mod+r mode "resize"
 bindsym $mod+r exec dmenu_run
-bindsym $mod+Shift+e exec dmenu_abstract files
-bindsym $mod+Shift+r exec dmenu_abstract apps
 bindsym $mod+Ctrl+q exec i3-msg exit
 bindsym $mod+Ctrl+r exec i3-msg reload
 bindsym $mod+t exec kitty
@@ -55,7 +54,7 @@ bindsym $mod+a gaps inner current minus 5
 bindsym $mod+s gaps inner current plus 5
 bindsym $mod+d exec i3lock -c 401040
 bindsym $mod+f fullscreen toggle
-# g
+bindsym $mod+g floating toggle
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
@@ -70,15 +69,17 @@ bindsym $mod+Ctrl+k resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+l resize grow width 10 px or 10 ppt
 bindsym $mod+semicolon exec dmenu_abstract
 # '
-bindsym $mod+Return exec kitty
+# Return
 
 bindsym $mod+z gaps outer current minus 5
 bindsym $mod+x gaps outer current plus 5
 bindsym $mod+c exec qalculate-gtk
 bindsym $mod+v exec kitty pulsemixer
-bindsym $mod+b floating toggle
-bindsym $mod+n split v
-bindsym $mod+m split h
+# b
+# n
+# m
+bindsym $mod+comma split v
+bindsym $mod+period split h
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
