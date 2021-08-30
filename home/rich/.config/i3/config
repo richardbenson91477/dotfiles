@@ -4,16 +4,16 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 font pango:Noto Sans 10
 # class                 border  backgr. text    indicator child_border
-client.focused          #9060a0 #202020 #ffffff #c080c0   #9060a0
-client.focused_inactive #4a4a4a #202020 #ffffff #404040   #4a4a4a
-client.unfocused        #303030 #202020 #888888 #404040   #303030
-client.urgent           #a00000 #202020 #ffffff #900000   #a00000
+client.focused          #905090 #202020 #ffffff #c080c0   #a060a0
+client.focused_inactive #704080 #202020 #ffffff #404040   #805090
+client.unfocused        #402040 #202020 #888888 #404040   #503050
+client.urgent           #901010 #202020 #ffffff #900000   #a02020
 client.placeholder      #000000 #202020 #ffffff #000000   #000000
-client.background       #000000
+client.background       #202020
 
-for_window [class="^.*"] border pixel 6
-gaps inner 8 
-gaps outer 8
+for_window [class="^.*"] border pixel 4
+gaps inner 3 
+gaps outer 3
 smart_gaps on
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
@@ -83,7 +83,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+z gaps outer current minus 5
 bindsym $mod+x gaps outer current plus 5
 bindsym $mod+c exec qalculate-gtk
-bindsym $mod+v exec kitty alsamixer -c1
+bindsym $mod+v exec kitty pulsemixer
 bindsym $mod+b floating toggle
 bindsym $mod+n split v
 bindsym $mod+m split h
@@ -102,11 +102,15 @@ bindsym $mod+Ctrl+Up resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+Right resize grow width 10 px or 10 ppt
 
 bar {
-        status_command i3status
+        status_command date_status
 }
+
+focus_follows_mouse no
 
 exec xmodmap_load
 exec create_cache_links
 exec pipewire
 exec xwallpaper --stretch ~/.background
-exec picom
+#exec picom
+exec dunst -print > ~/.cache/dunst.log
+
