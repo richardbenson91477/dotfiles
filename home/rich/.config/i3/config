@@ -78,7 +78,7 @@ bindsym $mod+v exec kitty pulsemixer
 # m
 bindsym $mod+comma split v
 bindsym $mod+period split h
-# ' bindsym $mod+apostrophe
+bindsym $mod+apostrophe exec clipmenu -l 30 -fn Hack-16 -nb \#502010 -sb \#a04020
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -97,8 +97,8 @@ bar {
         status_command date_status
 }
 
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock[no, slock] to lock the screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- slock
+# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the screen before suspend. Use loginctl lock-session to lock your screen.
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock
 
 # exec polybar example
 exec xmodmap_load
@@ -108,4 +108,4 @@ exec xwallpaper --stretch ~/.background
 #exec picom
 exec dunst -print > ~/.cache/dunst.log
 exec xpad
-
+exec clipmenud
