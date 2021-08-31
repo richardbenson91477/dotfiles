@@ -18,3 +18,4 @@ gtk-xft-hinting=1
 gtk-xft-hintstyle="hintmedium"
 gtk-xft-rgba="none"
 gtk-modules="canberra-gtk-module"
+gtk-key-theme-name="Emacs"
