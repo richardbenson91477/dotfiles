@@ -67,6 +67,7 @@ bindsym $mod+Ctrl+j resize grow height 10 px or 10 ppt
 bindsym $mod+Ctrl+k resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+l resize grow width 10 px or 10 ppt
 bindsym $mod+semicolon exec dmenu_abstract
+bindsym $mod+apostrophe exec clipmenu -l 30 -fn Hack-16 -nb \#502010 -sb \#a04020
 bindsym $mod+Return exec kitty
 
 bindsym $mod+z gaps outer current minus 5
@@ -76,9 +77,9 @@ bindsym $mod+v exec kitty pulsemixer
 # b
 # n
 # m
-bindsym $mod+comma split v
-bindsym $mod+period split h
-bindsym $mod+apostrophe exec clipmenu -l 30 -fn Hack-16 -nb \#502010 -sb \#a04020
+bindsym $mod+comma focus parent
+bindsym $mod+period focus child
+bindsym $mod+slash split toggle
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -109,3 +110,4 @@ exec xwallpaper --stretch ~/.background
 exec dunst -print > ~/.cache/dunst.log
 exec xpad
 exec clipmenud
+
