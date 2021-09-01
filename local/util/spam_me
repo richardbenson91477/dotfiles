@@ -1,4 +1,6 @@
 #!/bin/sh
 dmesg -w &
 tail -n +0 -f /var/log/messages &
+wait 
+wait
 
