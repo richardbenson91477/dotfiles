@@ -9,11 +9,24 @@ smart_gaps on
 floating_modifier $mod
 # class                 border  backgr. text    indicator child_border
 client.focused          #905090 #202020 #ffffff #c080c0   #a060a0
-client.focused_inactive #704080 #202020 #ffffff #404040   #805090
-client.unfocused        #402040 #202020 #888888 #404040   #503050
+client.focused_inactive #804020 #202020 #ffffff #404040   #805090
+client.unfocused        #404040 #202020 #888888 #404040   #503050
 client.urgent           #901010 #202020 #ffffff #900000   #a02020
 client.placeholder      #000000 #202020 #ffffff #000000   #000000
 client.background       #202020
+
+bindsym --whole-window $mod+button4 move down
+bindsym --whole-window $mod+button5 move up
+bindsym --whole-window $mod+Ctrl+button4 exec pulsemixer --change-volume +4
+bindsym --whole-window $mod+Ctrl+button5 exec pulsemixer --change-volume \-4
+bindsym --whole-window button6 fullscreen toggle
+bindsym --whole-window button7 kill
+bindsym --whole-window button8 workspace number $ws1
+bindsym --whole-window button9 workspace number $ws2
+bindsym --whole-window $mod+button8 move left
+bindsym --whole-window $mod+button9 move right
+bindsym --whole-window $mod+Shift+button8 move container to workspace number $ws1
+bindsym --whole-window $mod+Shift+button9 move container to workspace number $ws2
 
 set $ws1 "1"
 set $ws2 "2"
