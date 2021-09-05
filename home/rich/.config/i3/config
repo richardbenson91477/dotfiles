@@ -15,7 +15,7 @@ client.urgent           #901010 #202020 #ffffff #900000   #a02020
 client.placeholder      #000000 #202020 #ffffff #000000   #000000
 client.background       #202020
 
-bindsym --border $mod+button1 exec dmenu_abstract
+bindsym --border button2 exec dmenu_abstract
 bindsym --whole-window $mod+button4 move down
 bindsym --whole-window $mod+button5 move up
 bindsym --whole-window $mod+Ctrl+button4 exec pulsemixer --change-volume +4
