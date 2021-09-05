@@ -45,8 +45,8 @@ bindsym $mod+0 exec pulsemixer --toggle-mute
 bindsym $mod+Tab focus mode_toggle
 bindsym $mod+q kill
 bindsym $mod+w exec librewolf
-bindsym $mod+e exec kitty nnn
-bindsym $mod+r exec dmenu_run
+bindsym $mod+e exec kitty ranger
+bindsym $mod+r exec dmenu_run -l 20 -fn Hack-16 -nb \#202020 -nf \#a0a0a0 -sb \#404040 -sf \#c0c0c0
 bindsym $mod+Ctrl+q exec i3-msg exit
 bindsym $mod+Ctrl+r exec i3-msg reload
 bindsym $mod+t exec kitty
@@ -114,13 +114,13 @@ bar {
 exec --no-startup-id xss-lock --transfer-sleep-lock -- slock
 
 # exec polybar example
-exec xmodmap_load
-exec create_cache_links
+exec --no-startup-id xmodmap_load
+exec --no-startup-id create_cache_links
 exec pipewire
 exec xwallpaper --stretch ~/.background
 #exec picom
 exec dunst -print > ~/.cache/dunst.log
 exec clipmenud
-exec sleep 1 && volumeicon
+exec volumeicon
 exec xpad
 
