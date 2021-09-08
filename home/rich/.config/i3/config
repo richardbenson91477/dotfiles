@@ -63,6 +63,7 @@ bindsym $mod+backslash exec xrandr_brightness 1.0
 bindsym $mod+a gaps inner current minus 5
 bindsym $mod+s gaps inner current plus 5
 bindsym $mod+d exec gsimplecal
+bindsym $mod+Shift+d exec dclock -date "%A %m-%d-%Y" -bg gray16 -fg \#a04060 -led_off gray20
 bindsym $mod+f fullscreen toggle
 bindsym $mod+g floating toggle
 bindsym $mod+h focus left
@@ -111,16 +112,15 @@ bar {
         status_command date_status
 }
 
+exec --no-startup-id xrdb < ~/.Xresources
 exec --no-startup-id xss-lock --transfer-sleep-lock -- slock
-
-# exec polybar example
 exec --no-startup-id xmodmap_load
 exec --no-startup-id create_cache_links
-exec pipewire
-exec xwallpaper --stretch ~/.background
-#exec picom
-exec dunst -print > ~/.cache/dunst.log
-exec clipmenud
-exec volumeicon
-exec xpad
+exec --no-startup-id pipewire
+exec --no-startup-id xwallpaper --stretch ~/.background
+#exec --no-startup-id picom
+exec --no-startup-id dunst -print > ~/.cache/dunst.log
+exec --no-startup-id clipmenud
+exec --no-startup-id volumeicon
+exec --no-startup-id xpad
 
