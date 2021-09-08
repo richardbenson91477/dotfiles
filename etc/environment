@@ -6,6 +6,7 @@ CPP="cpp"
 IDM_CARCH="x86-64"
 CFLAGS="-fPIC -O3 -pipe -march=$IDM_CARCH -fomit-frame-pointer -funroll-loops"
 CXXFLAGS="-fPIC -O3 -pipe -march=$IDM_CARCH -fomit-frame-pointer -funroll-loops"
+VISUAL="vim"
 EDITOR="vim"
 FCEDIT="vim"
 PAGER="nvimpager"
@@ -22,3 +23,5 @@ VDPAU_DRIVER=radeonsi
 LIBVA_DRIVER_NAME=radeonsi
 QT_QPA_PLATFORMTHEME=qt6ct
 QT_STYLE_OVERRIDE=kvantum
+PYGMENTIZE_STYLE=monokai
+HIGHLIGHT_STYLE=xoria256
