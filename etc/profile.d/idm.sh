@@ -38,3 +38,7 @@ else
 fi
 export PS2='▶ '
 
+function pac_dangling {
+    pacman -Qdt --color=never | field 1 | xargs echo
+}
+
