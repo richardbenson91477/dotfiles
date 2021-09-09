@@ -1,5 +1,5 @@
 #!/bin/sh
 
-# pygmentize / nvimpager / vimpager
+# highlight / pygmentize / nvimpager 
 
-vimpager -c $@
+nvimpager -c $@
