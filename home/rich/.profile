@@ -12,7 +12,7 @@ case "$TERM" in
         setfont
         ;;
     *)
-        theme.sh darkside
+        theme.sh gooey
         ;;
 esac
 return

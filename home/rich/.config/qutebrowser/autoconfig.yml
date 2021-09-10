@@ -6,6 +6,8 @@
 
 config_version: 2
 settings:
+  colors.tabs.bar.bg:
+    global: '#000000'
   colors.tabs.even.bg:
     global: '#400a1a'
   colors.tabs.odd.bg:
@@ -18,7 +20,14 @@ settings:
     global: no-3rdparty
   content.notifications.enabled:
     https://mail.protonmail.com: true
+    https://www.reddit.com: false
   content.register_protocol_handler:
     https://mail.protonmail.com?to=%25s: false
   fonts.default_size:
     global: 12pt
+  tabs.indicator.width:
+    global: 0
+  url.default_page:
+    global: file:///media/hd/Prog/tests/html/black.html
+  url.start_pages:
+    global: file:///media/hd/Prog/tests/html/black.html

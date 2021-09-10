@@ -17,14 +17,8 @@ color=#20e0a0
 
 [dmenu_abstract]
 full_text=dmenu_abstract
-command=dmenu_abstract
+command=$HOME/bin/dmenu_abstract
 color=#a04080
-
-#[documentation]
-#full_text=Documentation
-#website=https://vivien.github.io/i3blocks
-#command=xdg-open "$website"
-#color=#f12711
 
 [ranger]
 full_text=≅

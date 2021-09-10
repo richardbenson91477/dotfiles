@@ -2,10 +2,9 @@
 set $mod Mod4
 focus_follows_mouse no
 font pango:Noto Sans 10
-for_window [class="^.*"] border pixel 3
-#gaps inner 10 
-#gaps outer 0
-#smart_gaps on
+#for_window [class="^.*"] border pixel 3
+#default_border pixel 3
+#default_floating_border pixel 3
 floating_modifier $mod
 # class                 border  backgr. text    indicator child_border
 client.focused          #905090 #202020 #ffffff #c080c0   #a060a0
