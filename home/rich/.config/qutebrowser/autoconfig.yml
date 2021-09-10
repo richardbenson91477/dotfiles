@@ -6,7 +6,17 @@
 
 config_version: 2
 settings:
+  colors.tabs.even.bg:
+    global: '#400a1a'
+  colors.tabs.odd.bg:
+    global: '#400a1a'
+  colors.tabs.selected.even.bg:
+    global: '#802040'
+  colors.tabs.selected.odd.bg:
+    global: '#802040'
   content.notifications.enabled:
     https://mail.protonmail.com: true
   content.register_protocol_handler:
     https://mail.protonmail.com?to=%25s: false
+  fonts.default_size:
+    global: 12pt
