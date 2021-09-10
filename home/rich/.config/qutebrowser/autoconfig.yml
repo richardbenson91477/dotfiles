@@ -14,6 +14,8 @@ settings:
     global: '#802040'
   colors.tabs.selected.odd.bg:
     global: '#802040'
+  content.cookies.accept:
+    global: no-3rdparty
   content.notifications.enabled:
     https://mail.protonmail.com: true
   content.register_protocol_handler:
