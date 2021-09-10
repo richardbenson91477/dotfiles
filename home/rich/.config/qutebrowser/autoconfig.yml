@@ -16,6 +16,8 @@ settings:
     global: '#802040'
   colors.tabs.selected.odd.bg:
     global: '#802040'
+  colors.webpage.bg:
+    global: black
   content.cookies.accept:
     global: no-3rdparty
   content.notifications.enabled:
@@ -27,6 +29,8 @@ settings:
     global: 12pt
   tabs.indicator.width:
     global: 0
+  tabs.show:
+    global: multiple
   url.default_page:
     global: file:///media/hd/Prog/tests/html/black.html
   url.start_pages:
