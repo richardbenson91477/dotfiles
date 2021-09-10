@@ -1,3 +1,4 @@
 #set keymap vi
 #set editing-mode vi
 #TAB: menu-complete
+set bell-style none
