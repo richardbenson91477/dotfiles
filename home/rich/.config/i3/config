@@ -14,19 +14,14 @@ client.urgent           #901010 #202020 #ffffff #900000   #a02020
 client.placeholder      #000000 #202020 #ffffff #000000   #000000
 client.background       #202020
 
-bindsym --border button2 exec dmenu_abstract
-bindsym --whole-window $mod+button4 move down
-bindsym --whole-window $mod+button5 move up
-bindsym --whole-window $mod+Ctrl+button4 exec pulsemixer --change-volume +4
-bindsym --whole-window $mod+Ctrl+button5 exec pulsemixer --change-volume \-4
+bindsym button2 move container to workspace number 1
+bindsym button3 move container to workspace number 2
+bindsym button4 move down
+bindsym button5 move up
 bindsym --whole-window button6 fullscreen toggle
 bindsym --whole-window button7 kill
-bindsym --whole-window button8 workspace prev
-bindsym --whole-window button9 workspace next
-bindsym --whole-window $mod+button8 move left
-bindsym --whole-window $mod+button9 move right
-bindsym --whole-window $mod+Shift+button8 move container to workspace prev
-bindsym --whole-window $mod+Shift+button9 move container to workspace next
+bindsym button8 move left
+bindsym button9 move right
 
 bindsym $mod+grave exec xterm -ls -e "sleep 0.1 && slock"
 bindsym $mod+1 workspace number 1
@@ -49,22 +44,20 @@ bindsym $mod+r exec dmenu_run -l 20 -fn Hack-16 -nb \#202020 -nf \#a0a0a0 -sb \#
 bindsym $mod+Ctrl+q exec i3-msg exit
 bindsym $mod+Ctrl+r exec i3-msg reload
 bindsym $mod+Ctrl+e exec i3-msg restart
-bindsym $mod+Shift+t exec kitty
+bindsym $mod+Shift+t exec xterm
 bindsym $mod+t exec alacritty 
 # y
 # u
 bindsym $mod+i exec alacritty -e bpytop
 bindsym $mod+o exec alacritty -e htop
-bindsym $mod+p workspace next
-bindsym $mod+Shift+p move container to workspace prev
+# p
 bindsym $mod+bracketleft exec xrandr_brightness_down
 bindsym $mod+bracketright exec xrandr_brightness_up
 bindsym $mod+backslash exec xrandr_brightness 1.0
 
-#bindsym $mod+a gaps inner current minus 5
-#bindsym $mod+s gaps inner current plus 5
+# a
+# s
 bindsym $mod+d exec gsimplecal
-bindsym $mod+Shift+d exec dclock -date "%A %m-%d-%Y" -bg gray16 -fg \#a04060 -led_off gray20
 bindsym $mod+f fullscreen toggle
 bindsym $mod+g floating toggle
 bindsym $mod+h focus left
@@ -90,8 +83,7 @@ bindsym $mod+c exec qalculate-gtk
 bindsym $mod+v exec pavucontrol
 bindsym $mod+Shift+v exec alacritty -e pulsemixer
 # b
-bindsym $mod+n workspace next
-bindsym $mod+Shift+n move container to workspace next
+# n
 # m
 bindsym $mod+comma focus parent
 bindsym $mod+period focus child
