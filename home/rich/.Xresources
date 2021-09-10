@@ -5,6 +5,6 @@ xterm*faceName: Hack-14
 xterm*precompose: false
 xterm*eightBitInput: false
 xterm*eightBitOutput: true
-
+XTerm*SaveLines: 9000
 Sxiv.background: #000000
 
