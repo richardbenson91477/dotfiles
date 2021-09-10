@@ -7,8 +7,13 @@
 
 
 # Global properties
-separator=true
+separator=false
 separator_block_width=15
+
+[xboard]
+full_text=♔
+command=xboard -depth 2 -fcp hoichess
+color=#20e0a0
 
 [dmenu_abstract]
 full_text=dmenu_abstract
@@ -21,11 +26,26 @@ color=#a04080
 #command=xdg-open "$website"
 #color=#f12711
 
+[ranger]
+full_text=≅
+command=alacritty -e ranger
+color=#2080e0
+
+[htop]
+full_text=↑
+command=alacritty -e htop
+color=#a08000
+
 [greetings]
 color=#f5af19
 command=echo "$USER@$HOSTNAME"
 interval=once
 
+[gsimplecal]
+full_text=∆
+command=gsimplecal
+color=#e0e0e0
+
 [time]
-command=date
+command=date +"%a %b %d %y %I:%M %p"
 interval=10
