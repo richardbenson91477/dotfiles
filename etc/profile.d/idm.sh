@@ -24,10 +24,6 @@ if [ x"$SHELL" = x"bash" ]; then
     bind "set menu-complete-display-prefix on"
     fi
 
-if [ x"$TERM" = x"xterm" ]; then
-    export TERM=xterm-256color
-    fi
-
 stty -ixon
 
 # with help from ezprompt.net

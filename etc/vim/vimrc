@@ -15,6 +15,7 @@ set scrolloff=4
 set tabpagemax=16
 set cmdheight=1
 set relativenumber
+set nowrapscan
 
 let g:rainbow_active = 1
 let g:netrw_banner = 0
@@ -44,9 +45,9 @@ nnoremap <leader>b <C-o>
 inoremap <C-l> <esc>
 
 " clipboard (system)
-vnoremap <leader>y "+y
-nnoremap <leader>p "+p
-nnoremap <leader>P "+P
+vnoremap <leader>y "*y
+nnoremap <leader>p "*p
+nnoremap <leader>P "*P
 nnoremap <silent> <leader> :WhichKey ','<CR>
 nnoremap <Space> :WhichKey ','<CR>
 
