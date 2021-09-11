@@ -1,10 +1,10 @@
 
 set $mod Mod4
 focus_follows_mouse no
-font pango:Terminus 11px
+font pango:Font Awesome 13
 #for_window [class="^.*"] border pixel 3
-#default_border pixel 3
-#default_floating_border pixel 3
+default_border pixel 5
+default_floating_border pixel 3
 floating_modifier $mod
 # class                 border  backgr. text    indicator child_border
 client.focused          #905090 #202020 #ffffff #c080c0   #a060a0
@@ -14,14 +14,14 @@ client.urgent           #901010 #202020 #ffffff #900000   #a02020
 client.placeholder      #000000 #202020 #ffffff #000000   #000000
 client.background       #202020
 
-bindsym button2 move container to workspace number 1
-bindsym button3 move container to workspace number 2
-bindsym button4 move up
-bindsym button5 move down
+bindsym --border button2 move container to workspace number 1
+bindsym --border button3 move container to workspace number 2
+bindsym --border button4 move up
+bindsym --border button5 move down
 bindsym --whole-window button6 fullscreen toggle
 bindsym --whole-window button7 kill
-bindsym button8 move left
-bindsym button9 move right
+bindsym --border button8 move left
+bindsym --border button9 move right
 
 bindsym $mod+grave exec xterm -ls -e "sleep 0.1 && slock"
 bindsym $mod+1 workspace number 1
@@ -103,7 +103,16 @@ bindsym $mod+Ctrl+Up resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+Right resize grow width 10 px or 10 ppt
 
 bar {
-        status_command i3blocks
+    status_command i3blocks
+    colors {
+        background #400a2a
+        statusline #ffffff
+
+        focused_workspace  #ffffff #402080
+        active_workspace   #ffffff #808080
+        inactive_workspace #ffffff #802040
+        urgent_workspace   #ffffff #b02020
+    }
 }
 
 exec --no-startup-id xrdb < ~/.Xresources
@@ -111,7 +120,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- slock
 exec --no-startup-id xmodmap_load
 exec --no-startup-id create_cache_links
 exec --no-startup-id pipewire
-exec --no-startup-id xwallpaper --stretch ~/.background
+#exec --no-startup-id xwallpaper --stretch ~/.background
 #exec --no-startup-id picom
 exec --no-startup-id dunst -print > ~/.cache/dunst.log
 exec --no-startup-id volumeicon
