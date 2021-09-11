@@ -26,7 +26,7 @@ command=alacritty -e ranger
 color=#2080e0
 
 [greetings]
-full_text="rich@dash"
+full_text="M4UID"
 color=#f5af19
 command=alacritty -e htop
 color=#a08000

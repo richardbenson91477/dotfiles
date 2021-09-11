@@ -739,10 +739,12 @@ key_bindings:
   #- { key: L,         mods: Control, mode: ~Vi|~Search, chars: "\x0c"          }
   #- { key: PageUp,    mods: Shift,   mode: ~Alt,        action: ScrollPageUp,  }
   #- { key: PageDown,  mods: Shift,   mode: ~Alt,        action: ScrollPageDown }
-- { key: U,      mods: Control|Alt,  mode: ~Alt, action: ScrollHalfPageUp        }
-- { key: D,      mods: Control|Alt,  mode: ~Alt, action: ScrollHalfPageDown      }
+- { key: U, mods: Control|Alt,  mode: ~Alt, action: ScrollHalfPageUp        }
+- { key: D, mods: Control|Alt,  mode: ~Alt, action: ScrollHalfPageDown      }
 - { key: LBracket,  mods: Control|Alt, mode: ~Alt, action: ScrollToTop,   }
 - { key: RBracket, mods: Control|Alt, mode: ~Alt, action: ScrollToBottom }
+- { key: J, mods: Control|Alt, mode: ~Alt, action: ScrollLineDown }
+- { key: K, mods: Control|Alt, mode: ~Alt, action: ScrollLineUp }
 
   # Vi Mode
 - { key: Space,  mods: Control, mode: ~Search,    action: ToggleViMode            }

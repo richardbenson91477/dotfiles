@@ -16,8 +16,8 @@ client.background       #202020
 
 bindsym button2 move container to workspace number 1
 bindsym button3 move container to workspace number 2
-bindsym button4 move down
-bindsym button5 move up
+bindsym button4 move up
+bindsym button5 move down
 bindsym --whole-window button6 fullscreen toggle
 bindsym --whole-window button7 kill
 bindsym button8 move left
