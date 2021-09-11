@@ -73,9 +73,8 @@ bindsym $mod+Ctrl+j resize grow height 10 px or 10 ppt
 bindsym $mod+Ctrl+k resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+l resize grow width 10 px or 10 ppt
 bindsym $mod+semicolon exec dmenu_abstract
-bindsym $mod+apostrophe exec dmenu_abstract desk
-
-bindsym $mod+Return exec alacritty
+bindsym $mod+apostrophe exec i3-horizontal-term
+bindsym $mod+Return exec i3-vertical-term
 
 #bindsym $mod+z gaps outer current minus 5
 #bindsym $mod+x gaps outer current plus 5
