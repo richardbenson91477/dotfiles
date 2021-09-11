@@ -1,0 +1,6 @@
+#!/bin/sh
+make && {
+    killall -HUP i3blocks
+    sleep 1
+    i3-msg restart
+}

@@ -8,33 +8,32 @@
 
 # Global properties
 separator=false
-separator_block_width=15
+separator_block_width=8
 
 [xboard]
 full_text=♔
 command=xboard -depth 2 -fcp hoichess
 color=#20e0a0
 
-[dmenu_abstract]
-full_text=dmenu_abstract
-command=$HOME/bin/dmenu_abstract
-color=#a04080
-
 [ranger]
 full_text=📁
 command=alacritty -e ranger
 color=#2080e0
 
-[greetings]
-full_text="M4UID"
-color=#f5af19
-command=alacritty -e htop
-color=#a08000
-
 [gsimplecal]
 full_text=🗓
 command=gsimplecal
 color=#e0e0e0
+
+[dmenu_abstract]
+full_text=🐔
+command=$HOME/bin/dmenu_abstract
+color=#a04080
+
+[greetings]
+full_text="M4UID"
+color=#f080a0
+command=alacritty -e htop
 
 [time]
 command=date +"%a %b %d %y %I:%M %p"
