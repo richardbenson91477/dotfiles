@@ -38,18 +38,20 @@ bindsym $mod+0 exec pulsemixer --toggle-mute
 
 bindsym $mod+Tab focus mode_toggle
 bindsym $mod+q kill
-bindsym $mod+w exec qutebrowser
-bindsym $mod+e exec alacritty -e ranger
+bindsym $mod+w exec i3-msg split horizontal && qutebrowser
+bindsym $mod+Shift+w exec i3-msg split vertical && qutebrowser
+bindsym $mod+e exec i3-msg split horizontal && alacritty -e ranger
+bindsym $mod+Shift+e exec i3-msg split vertical && alacritty -e ranger
 bindsym $mod+r exec dmenu_run -l 20 -fn Hack-16 -nb \#202020 -nf \#a0a0a0 -sb \#404040 -sf \#c0c0c0
 bindsym $mod+Ctrl+q exec i3-msg exit
 bindsym $mod+Ctrl+r exec i3-msg reload
 bindsym $mod+Ctrl+e exec i3-msg restart
-bindsym $mod+Shift+t exec xterm
-bindsym $mod+t exec alacritty 
+# t
 # y
 # u
-bindsym $mod+i exec alacritty -e bpytop
-bindsym $mod+o exec alacritty -e htop
+# i
+bindsym $mod+o exec i3-msg split vertical && alacritty -e htop
+bindsym $mod+Shift+o exec i3-msg split horizontal && alacritty -e htop
 # p
 bindsym $mod+bracketleft exec xrandr_brightness_down
 bindsym $mod+bracketright exec xrandr_brightness_up
@@ -73,14 +75,16 @@ bindsym $mod+Ctrl+j resize grow height 10 px or 10 ppt
 bindsym $mod+Ctrl+k resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+l resize grow width 10 px or 10 ppt
 bindsym $mod+semicolon exec dmenu_abstract
-bindsym $mod+apostrophe exec i3-horizontal-term
-bindsym $mod+Return exec i3-vertical-term
+# apostrophe
+bindsym $mod+Return exec i3-msg split vertical && alacritty
+bindsym $mod+Shift+Return exec i3-msg split horizontal && alacritty
 
 #bindsym $mod+z gaps outer current minus 5
 #bindsym $mod+x gaps outer current plus 5
-bindsym $mod+c exec qalculate-gtk
-bindsym $mod+v exec pavucontrol
-bindsym $mod+Shift+v exec alacritty -e pulsemixer
+bindsym $mod+c exec i3-msg split vertical && qalculate-gtk
+bindsym $mod+Shift+c exec i3-msg split horizontal && qalculate-gtk
+bindsym $mod+v exec i3-msg split vertical && pavucontrol
+bindsym $mod+Shift+v exec i3-msg split horizontal && pavucontrol
 # b
 # n
 # m

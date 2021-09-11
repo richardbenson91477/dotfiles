@@ -1,4 +1,0 @@
-#!/bin/sh
-i3-msg split horizontal &&
-    exec alacritty &
-
