@@ -741,8 +741,8 @@ key_bindings:
   #- { key: PageDown,  mods: Shift,   mode: ~Alt,        action: ScrollPageDown }
 - { key: U, mods: Control|Alt,  mode: ~Alt, action: ScrollHalfPageUp        }
 - { key: D, mods: Control|Alt,  mode: ~Alt, action: ScrollHalfPageDown      }
-- { key: LBracket,  mods: Control|Alt, mode: ~Alt, action: ScrollToTop,   }
-- { key: RBracket, mods: Control|Alt, mode: ~Alt, action: ScrollToBottom }
+- { key: LBracket, mods: Control|Alt, mode: ~Alt, action: ScrollToTop,   }
+- { key: RBracket,mods: Control|Alt, mode: ~Alt, action: ScrollToBottom }
 - { key: J, mods: Control|Alt, mode: ~Alt, action: ScrollLineDown }
 - { key: K, mods: Control|Alt, mode: ~Alt, action: ScrollLineUp }
 
@@ -810,18 +810,16 @@ key_bindings:
   #- { key: Return, mods: Shift,   mode: Search|~Vi, action: SearchFocusPrevious   }
 
   # (Windows, Linux, and BSD only)
-- { key: V,              mods: Control|Alt, mode: ~Vi,        action: Paste            }
-- { key: C,              mods: Control|Alt,                   action: Copy             }
-- { key: F,              mods: Control|Alt, mode: ~Search,    action: SearchForward    }
-- { key: B,              mods: Control|Alt, mode: ~Search,    action: SearchBackward   }
-  #- { key: C,              mods: Control|Shift, mode: Vi|~Search, action: ClearSelection   }
-- { key: V,         mods: Control|Shift,                           action: PasteSelection   }
-  #- { key: Key0,           mods: Control,                         action: ResetFontSize    }
-- { key: Equals,         mods: Control|Alt,                         action: IncreaseFontSize }
-- { key: Plus,           mods: Control|Alt,                         action: IncreaseFontSize }
-  #- { key: NumpadAdd,      mods: Control,                         action: IncreaseFontSize }
-- { key: Minus,          mods: Control|Alt,                         action: DecreaseFontSize }
-  #- { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
+- { key: V, mods: Control|Alt, mode: ~Vi, action: Paste            }
+- { key: C, mods: Control|Alt, action: Copy             }
+- { key: F, mods: Control|Alt, mode: ~Search, action: SearchForward    }
+- { key: B, mods: Control|Alt, mode: ~Search, action: SearchBackward   }
+- { key: V, mods: Control|Shift, action: PasteSelection   }
+- { key: Equals, mods: Control|Alt, action: IncreaseFontSize }
+- { key: Plus, mods: Control|Alt, action: IncreaseFontSize }
+- { key: Minus, mods: Control|Alt, action: DecreaseFontSize }
+- { key: Return, mods: Control|Alt, command: i3-vertical-term }
+- { key: Apostrophe, mods: Control|Alt, command: i3-horizontal-term }
 
 #debug:
   # Display the time it takes to redraw each frame.
