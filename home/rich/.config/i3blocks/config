@@ -21,7 +21,7 @@ command=$HOME/bin/dmenu_abstract
 color=#a04080
 
 [ranger]
-full_text=≅
+full_text=📁
 command=alacritty -e ranger
 color=#2080e0
 
@@ -32,7 +32,7 @@ command=alacritty -e htop
 color=#a08000
 
 [gsimplecal]
-full_text=∆
+full_text=🗓
 command=gsimplecal
 color=#e0e0e0
 
