@@ -11,8 +11,10 @@ case "$TERM" in
     "linux"|"console")
         setfont
         ;;
+    "alacritty")
+        ;;
     *)
-        theme.sh gooey
+        theme.sh srcery
         ;;
 esac
 return

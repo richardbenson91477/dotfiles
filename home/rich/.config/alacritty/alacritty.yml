@@ -102,7 +102,7 @@
 scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
-  history: 10000
+  history: 20000
 
   # Scrolling distance multiplier.
   #multiplier: 3
@@ -181,12 +181,12 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-# Colors (Tomorrow Night)
-#colors:
+# Colors (idm6)
+colors:
   # Default colors
-  #primary:
-  #  background: '#1d1f21'
-  #  foreground: '#c5c8c6'
+  primary:
+    background: '#202020'
+    foreground: '#c0c0c0'
 
     # Bright and dim foreground colors
     #
@@ -194,8 +194,8 @@ font:
     # present. If the bright foreground color is not set, or
     # `draw_bold_text_with_bright_colors` is `false`, the normal foreground
     # color will be used.
-    #dim_foreground: '#828482'
-    #bright_foreground: '#eaeaea'
+    dim_foreground: '#404040'
+    bright_foreground: '#e0e0e0'
 
   # Cursor colors
   #
@@ -203,9 +203,9 @@ font:
   #
   # Allowed values are CellForeground/CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
 
   # Vi mode cursor colors
   #
@@ -273,26 +273,26 @@ font:
   #  background: CellForeground
 
   # Normal colors
-  #normal:
-  #  black:   '#1d1f21'
-  #  red:     '#cc6666'
-  #  green:   '#b5bd68'
-  #  yellow:  '#f0c674'
-  #  blue:    '#81a2be'
-  #  magenta: '#b294bb'
-  #  cyan:    '#8abeb7'
-  #  white:   '#c5c8c6'
+  normal:
+    black:   '#1a1a1a'
+    red:     '#b3425d'
+    green:   '#6cce9f'
+    yellow:  '#ffaf5f'
+    blue:    '#4389c9'
+    magenta: '#ba59bb'
+    cyan:    '#a46edb'
+    white:   '#626262'
 
   # Bright colors
-  #bright:
-  #  black:   '#666666'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0b1'
-  #  white:   '#eaeaea'
+  bright:
+    black:   '#acacac'
+    red:     '#ce637c'
+    green:   '#a9f4d0'
+    yellow:  '#ffdb8d'
+    blue:    '#7ebbf3'
+    magenta: '#feaed6'
+    cyan:    '#c7a1ed'
+    white:   '#e5e5e5'
 
   # Dim colors
   #
