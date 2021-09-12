@@ -21,7 +21,7 @@ command=i3blocks_mouse_launcher alacritty -e ranger
 color=#2080e0
 
 [dmenu_abstract]
-full_text=🐔
+full_text=🌈
 command=$HOME/bin/dmenu_abstract
 color=#a04080
 

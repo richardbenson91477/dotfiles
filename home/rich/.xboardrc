@@ -5,7 +5,7 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1629747379
+-saveDate 1631422572
 -whitePieceColor #d8b3ff
 -blackPieceColor #4c0028
 -lightSquareColor #bd80ff
@@ -47,7 +47,7 @@
 -periodicUpdates true
 -popupExitMessage true
 -popupMoveErrors false
--boardSize Medium
+-boardSize Middling
 -alwaysOnTop false
 -autoCallFlag false
 -autoComment false
@@ -117,7 +117,7 @@
 "kc" -icshost alanimus.com -icshelper timeseal
 }
 -recentEngines 1
--recentEngineList {fairymax
+-recentEngineList {hoichess
 }
 -firstChessProgramNames {fairymax
 sjaakii
@@ -231,41 +231,41 @@ hoichess
 -analysisBell 0
 -timeOddsMode 0
 -keepLineBreaksICS false
--winWidth 576
--winHeight 681
--x 619
--y 145
+-winWidth 1910
+-winHeight 517
+-x 0
+-y 526
 -icsUp false
--icsX 2147483029
--icsY 2147483503
+-icsX -2147483648
+-icsY 2147483122
 -icsW -2147483648
 -icsH -2147483648
--commentX -519
--commentY 697
+-commentX 100
+-commentY 316
 -commentW 259
 -commentH 83
--tagsX 7
--tagsY 45
+-tagsX 626
+-tagsY -336
 -tagsW 481
 -tagsH 379
--gameListX 286
--gameListY 271
+-gameListX 905
+-gameListY -110
 -gameListW 575
 -gameListH 300
--slaveX 2147483029
--slaveY 2147483503
+-slaveX -2147483648
+-slaveY 2147483122
 -moveHistoryUp false
--moveHistoryX -117
--moveHistoryY 803
+-moveHistoryX 502
+-moveHistoryY 422
 -moveHistoryW 404
 -moveHistoryH 49
 -evalGraphUp false
--evalGraphX 717
--evalGraphY 312
+-evalGraphX 1336
+-evalGraphY -69
 -evalGraphW 495
 -evalGraphH 359
 -engineOutputUp false
--engineOutputX 80
--engineOutputY 351
+-engineOutputX 699
+-engineOutputY -30
 -engineOutputW 583
 -engineOutputH 427

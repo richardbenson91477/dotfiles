@@ -119,6 +119,7 @@ bar {
 }
 
 exec --no-startup-id xrdb < ~/.Xresources
+exec xsetroot -solid "#2a0a1a"
 exec --no-startup-id xss-lock --transfer-sleep-lock -- slock
 exec --no-startup-id xmodmap_load
 exec --no-startup-id create_cache_links
