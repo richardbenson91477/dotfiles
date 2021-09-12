@@ -5,7 +5,7 @@
 ; but if you add other options, the next Save Settings will not save them.
 ; Use a shortcut, an @indirection file, or a .bat file instead.
 ;
--saveDate 1631422572
+-saveDate 1631429812
 -whitePieceColor #d8b3ff
 -blackPieceColor #4c0028
 -lightSquareColor #bd80ff
@@ -101,7 +101,7 @@
 -soundIcsUnfinished ""
 -soundIcsAlarm ""
 -disguisePromotedPieces true
--saveSettingsOnExit true
+-saveSettingsOnExit false
 -icsMenu {[Event "?"]
 [Site "?"]
 [Date "????.??.??"]
@@ -117,7 +117,7 @@
 "kc" -icshost alanimus.com -icshelper timeseal
 }
 -recentEngines 1
--recentEngineList {hoichess
+-recentEngineList {gnuchess
 }
 -firstChessProgramNames {fairymax
 sjaakii
