@@ -22,7 +22,7 @@ color=#2080e0
 
 [dmenu_abstract]
 full_text=🌈
-command=$HOME/bin/dmenu_abstract
+command=i3blocks_mouse_launcher $HOME/bin/dmenu_abstract
 color=#a04080
 
 [gsimplecal]
