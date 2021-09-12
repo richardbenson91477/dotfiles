@@ -134,6 +134,7 @@ nnoremap <leader>mt :wall<bar>make! test<cr>
 nnoremap <leader>mu :wall<bar>make! upload<cr>
 nnoremap <leader>mp :wall<bar>make! program<cr>
 nnoremap <leader>mc :make! clean<cr>
+nnoremap <leader>mi :make! install<cr>
 nnoremap <leader>mb :w<bar>make! %:t:r<cr>
 nnoremap <leader>mo :w<bar>make! %:t:r.o<cr>
 
