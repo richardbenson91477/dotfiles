@@ -1,46 +1,26 @@
-# i3blocks configuration file
-#
-# The i3blocks man page describes the usage of the binary,
-# and its website describes the configuration:
-#
-#     https://vivien.github.io/i3blocks
+define(`M4LAUNCHER',`
+[$1]
+full_text=$2
+command=i3blocks_mouse_launcher $3
+color=$4
+')dnl
 
+define(`M4INTERVAL',`
+[$1]
+command=$2
+interval=$3
+color=$4
+')dnl
 
-# Global properties
 separator=false
 separator_block_width=8
 
-[xboard]
-full_text=♔
-command=i3blocks_mouse_launcher xboard -depth 2 -fcp hoichess
-color=#20e0a0
+M4LAUNCHER(`xboard',`♔',`xboard -depth 2 -fcp hoichess',`#20e0a0')
+M4LAUNCHER(`ranger',`📁',`alacritty -e ranger',`#2080e0')
+M4LAUNCHER(`dmenu_abstract',`🌈',`$HOME/bin/dmenu_abstract',`#a04080')
+M4LAUNCHER(`gsimplecal',`🗓 ',`gsimplecal',`e0e0e0')
+M4LAUNCHER(`greetings',M4UID,`alacritty -e htop',`#f080a0')
 
-[ranger]
-full_text=📁
-command=i3blocks_mouse_launcher alacritty -e ranger
-color=#2080e0
+M4INTERVAL(`weather',`curl -Ss "https://wttr.in?0&T&Q" | cut -c 16- | head -2 | xargs echo',`3600',`#A4C2F4')
+M4INTERVAL(`time',`date +"%a %b %d %y %I:%M %p"',`60',`#ffc080')
 
-[dmenu_abstract]
-full_text=🌈
-command=i3blocks_mouse_launcher $HOME/bin/dmenu_abstract
-color=#a04080
-
-[gsimplecal]
-full_text=🗓
-command=gsimplecal
-color=#e0e0e0
-
-[greetings]
-full_text="M4UID"
-color=#f080a0
-command=i3blocks_mouse_launcher alacritty -e htop
-
-# Guess the weather hourly
-[weather]
-command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
-interval=3600
-color=#A4C2F4
-
-[time]
-command=date +"%a %b %d %y %I:%M %p"
-interval=60
