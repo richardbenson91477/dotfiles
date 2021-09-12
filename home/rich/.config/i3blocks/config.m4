@@ -12,29 +12,35 @@ separator_block_width=8
 
 [xboard]
 full_text=♔
-command=xboard -depth 2 -fcp hoichess
+command=i3blocks_mouse_launcher xboard -depth 2 -fcp hoichess
 color=#20e0a0
 
 [ranger]
 full_text=📁
-command=alacritty -e ranger
+command=i3blocks_mouse_launcher alacritty -e ranger
 color=#2080e0
-
-[gsimplecal]
-full_text=🗓
-command=gsimplecal
-color=#e0e0e0
 
 [dmenu_abstract]
 full_text=🐔
 command=$HOME/bin/dmenu_abstract
 color=#a04080
 
+[gsimplecal]
+full_text=🗓
+command=gsimplecal
+color=#e0e0e0
+
 [greetings]
 full_text="M4UID"
 color=#f080a0
-command=alacritty -e htop
+command=i3blocks_mouse_launcher alacritty -e htop
+
+# Guess the weather hourly
+[weather]
+command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+interval=3600
+color=#A4C2F4
 
 [time]
 command=date +"%a %b %d %y %I:%M %p"
-interval=10
+interval=60
