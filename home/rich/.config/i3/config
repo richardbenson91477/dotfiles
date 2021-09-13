@@ -14,8 +14,8 @@ client.urgent           #901010 #202020 #ffffff #900000   #a02020
 client.placeholder      #000000 #202020 #ffffff #000000   #000000
 client.background       #202020
 
-bindsym --border button2 move container to workspace number 1
-bindsym --border button3 move container to workspace number 2
+bindsym --border button2 move container to workspace prev
+bindsym --border button3 exec i3-move-container-right
 bindsym --border button4 move up
 bindsym --border button5 move down
 bindsym --whole-window button6 fullscreen toggle
