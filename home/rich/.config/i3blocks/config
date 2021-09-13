@@ -4,10 +4,16 @@ separator=false
 separator_block_width=8
 
 
+[alacritty]
+full_text=💻
+command=i3blocks_mouse_launcher alacritty
+color=#00FF00
+
+
 [xboard]
-full_text=♔
+full_text=♚
 command=i3blocks_mouse_launcher xboard -depth 2 -fcp hoichess
-color=#20e0a0
+color=#f0a0a0
 
 
 [ranger]
@@ -45,5 +51,12 @@ color=#A4C2F4
 command=date +"%a %b %d %y %I:%M %p"
 interval=60
 color=#ffc080
+
+
+
+[mixer]
+full_text=🦻
+command=i3blocks_mouse_launcher pavucontrol
+color=#a0a0a0
 
 
