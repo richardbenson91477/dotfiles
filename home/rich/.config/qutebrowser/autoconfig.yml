@@ -18,6 +18,8 @@ settings:
     global: '#802040'
   colors.webpage.bg:
     global: black
+  completion.height:
+    global: 33%
   content.cookies.accept:
     global: no-3rdparty
   content.notifications.enabled:
@@ -25,8 +27,14 @@ settings:
     https://www.reddit.com: false
   content.register_protocol_handler:
     https://mail.protonmail.com?to=%25s: false
+  fonts.default_family:
+    global: Meslo
   fonts.default_size:
-    global: 12pt
+    global: 13pt
+  fonts.tabs.selected:
+    global: default_size default_family
+  fonts.tabs.unselected:
+    global: default_size default_family
   tabs.indicator.width:
     global: 0
   tabs.show:

@@ -1,7 +1,7 @@
 xterm*loginShell: true
 xterm*foreground: #a0a0a0
 xterm*background: #202020
-xterm*faceName: Hack-14
+xterm*faceName: Meslo-14
 xterm*precompose: false
 xterm*eightBitInput: false
 xterm*eightBitOutput: true
