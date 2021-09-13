@@ -180,8 +180,8 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#202020'
-    foreground: '#c0c0c0'
+    background: '#2a0820'
+    foreground: '#d0d0d0'
 
     # Bright and dim foreground colors
     #
@@ -254,8 +254,8 @@ colors:
   #
   # By default, these will use the opposing primary color.
   line_indicator:
-    foreground: #e0e0e0
-    background: #a05020
+    foreground: '#e0e0e0'
+    background: '#a04010'
 
   # Selection colors
   #
@@ -264,8 +264,8 @@ colors:
   # Allowed values are CellForeground/CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
   selection:
-    text: CellBackground
-    background: CellForeground
+    text: '#e0e0e0'
+    background: '#501050'
 
   # Normal colors
   normal:
