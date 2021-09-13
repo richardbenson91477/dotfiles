@@ -15,6 +15,7 @@ color=$4
 separator=false
 separator_block_width=8
 
+M4LAUNCHER(`qutebrowser',`🕸',`qutebrowser',`2020f0')
 M4LAUNCHER(`alacritty',`💻',`alacritty',`#00FF00')
 M4LAUNCHER(`xboard',`♚',`xboard -depth 2 -fcp hoichess',`#f0a0a0')
 M4LAUNCHER(`ranger',`📁',`alacritty -e ranger',`#2080e0')

@@ -109,22 +109,22 @@ bar {
     status_command i3blocks
     colors {
         background #400a2a
-        statusline #ffffff
+        statusline #e0e0e0
 
-        focused_workspace  #ffffff #402080
-        active_workspace   #ffffff #808080
-        inactive_workspace #ffffff #802040
-        urgent_workspace   #ffffff #b02020
+        focused_workspace  #e0caca #402080 #e0caca
+        active_workspace   #e0caca #808080 #e0caca
+        inactive_workspace #e0caca #802040 #e0caca
+        urgent_workspace   #ff4040 #b02020 #ff0000
     }
 }
 
 exec --no-startup-id xrdb < ~/.Xresources
-exec xsetroot -solid "#2a0a1a"
+#exec xsetroot -solid "#2a0a1a"
 exec --no-startup-id xss-lock --transfer-sleep-lock -- slock
 exec --no-startup-id xmodmap_load
 exec --no-startup-id create_cache_links
 exec --no-startup-id pipewire
-#exec --no-startup-id xwallpaper --stretch ~/.background
+exec --no-startup-id xwallpaper --center ~/.background
 #exec --no-startup-id picom
 exec --no-startup-id dunst -print > ~/.cache/dunst.log
 exec --no-startup-id volumeicon

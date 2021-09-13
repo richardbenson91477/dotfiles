@@ -4,6 +4,12 @@ separator=false
 separator_block_width=8
 
 
+[qutebrowser]
+full_text=🕸
+command=i3blocks_mouse_launcher qutebrowser
+color=2020f0
+
+
 [alacritty]
 full_text=💻
 command=i3blocks_mouse_launcher alacritty
