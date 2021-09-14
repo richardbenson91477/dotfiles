@@ -14,14 +14,14 @@ client.urgent           #901010 #202020 #ffffff #900000   #a02020
 client.placeholder      #000000 #202020 #ffffff #000000   #000000
 client.background       #202020
 
-bindsym --border button2 move container to workspace prev
-bindsym --border button3 exec i3-move-container-right
+bindsym --border button1 move left
+bindsym --border button3 move right
 bindsym --border button4 move up
 bindsym --border button5 move down
 bindsym --whole-window button6 fullscreen toggle
 bindsym --whole-window button7 kill
-bindsym --border button8 move left
-bindsym --border button9 move right
+bindsym --border button8 move container to workspace prev
+bindsym --border button9 exec i3-move-container-right
 
 bindsym $mod+grave exec xterm -ls -e "sleep 0.1 && slock"
 bindsym $mod+1 workspace number 1
