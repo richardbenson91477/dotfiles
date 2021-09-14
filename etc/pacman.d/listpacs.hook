@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Updating /etc/pacs
+When = PostTransaction
+Exec = /local/util/update_pacs_list
+
