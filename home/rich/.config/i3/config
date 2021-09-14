@@ -52,7 +52,7 @@ bindsym $mod+Ctrl+e exec i3-msg restart
 # i
 bindsym $mod+o exec i3-msg split vertical && alacritty -e htop
 bindsym $mod+Shift+o exec i3-msg split horizontal && alacritty -e htop
-# p
+bindsym $mod+p exec scrot
 bindsym $mod+bracketleft exec xrandr_brightness_down
 bindsym $mod+bracketright exec xrandr_brightness_up
 bindsym $mod+backslash exec xrandr_brightness 1.0

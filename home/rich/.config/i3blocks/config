@@ -5,7 +5,7 @@ separator_block_width=8
 
 
 [qutebrowser]
-full_text=🕸
+full_text=🕵
 command=i3blocks_mouse_launcher qutebrowser
 color=2020f0
 
@@ -60,8 +60,14 @@ color=#ffc080
 
 
 
+[scrot]
+full_text=⎙
+command=i3blocks_mouse_launcher scrot
+color=a0a0a0
+
+
 [mixer]
-full_text=🦻
+full_text=🎧
 command=i3blocks_mouse_launcher pavucontrol
 color=#a0a0a0
 

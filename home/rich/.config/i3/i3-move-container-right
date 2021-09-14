@@ -1,0 +1,6 @@
+#!/bin//sh
+X=$(i3-msg -t get_workspaces | jq .[].name | sort -n | tail -n 1 | cut -d\" -f2)
+X=$(($X + 1))
+echo $X
+i3-msg move container to workspace number $X >&/dev/null
+
