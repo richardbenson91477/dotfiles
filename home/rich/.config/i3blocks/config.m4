@@ -1,7 +1,7 @@
 define(`M4LAUNCHER',`
 [$1]
 full_text=$2
-command=i3blocks_mouse_launcher $3
+command=i3blocks_mouse_launcher "$3"
 color=$4
 ')dnl
 

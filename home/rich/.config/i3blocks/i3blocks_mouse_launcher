@@ -10,22 +10,22 @@ focus_parent_a_lot () {
 case "$BLOCK_BUTTON" in
     1)
         i3-msg -q split vertical
-        i3-msg -q "exec --no-startup-id $@"
+        i3-msg -q "exec --no-startup-id $1"
     ;;
     3)
         i3-msg -q split horizontal
-        i3-msg -q "exec --no-startup-id $@"
+        i3-msg -q "exec --no-startup-id $1"
     ;;
     8)
         focus_parent_a_lot
         i3-msg -q split vertical
-        i3-msg -q "exec --no-startup-id $@"
+        i3-msg -q "exec --no-startup-id $1"
         exec $@
     ;;
     9)
         focus_parent_a_lot
         i3-msg -q split horizontal
-        i3-msg -q "exec --no-startup-id $@"
+        i3-msg -q "exec --no-startup-id $1"
     ;;
 esac
 
