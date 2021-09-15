@@ -1,6 +1,7 @@
 #!/bin/sh
 make && {
     killall -HUP i3blocks
+    killall -HUP i3blocks-idm
     sleep 1
     i3-msg restart
 }

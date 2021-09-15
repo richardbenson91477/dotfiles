@@ -2,30 +2,32 @@
 focus_parent_a_lot () {
     X=0
     while [ "$X" -lt 16 ]; do
-        i3-msg focus parent >& /dev/null
+        i3-msg -q focus parent
         X=$(($X + 1))
         done
 }
 
 case "$BLOCK_BUTTON" in
     1)
-        i3-msg split vertical >& /dev/null
-        exec $@
+        i3-msg -q split vertical
+        i3-msg -q "exec --no-startup-id $@"
     ;;
     3)
-        i3-msg split horizontal >& /dev/null
-        exec $@
+        i3-msg -q split horizontal
+        i3-msg -q "exec --no-startup-id $@"
     ;;
     8)
         focus_parent_a_lot
-        i3-msg split vertical >& /dev/null
+        i3-msg -q split vertical
+        i3-msg -q "exec --no-startup-id $@"
         exec $@
     ;;
     9)
         focus_parent_a_lot
-        i3-msg split horizontal >& /dev/null
-        exec $@
+        i3-msg -q split horizontal
+        i3-msg -q "exec --no-startup-id $@"
     ;;
 esac
+
 # unhandled buttons below
 
