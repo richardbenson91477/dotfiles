@@ -7,7 +7,7 @@ separator_block_width=8
 [qutebrowser]
 full_text=🕵
 command=exec i3blocks_mouse_launcher qutebrowser
-color=2020f0
+color=#2020f0
 
 
 [alacritty]
@@ -37,7 +37,7 @@ color=#a04080
 [gsimplecal]
 full_text=🗓 
 command=exec i3blocks_mouse_launcher gsimplecal
-color=e0e0e0
+color=#e0e0e0
 
 
 [greetings]
@@ -63,12 +63,12 @@ color=#ffc080
 [scrot]
 full_text=⎙
 command=exec i3blocks_mouse_launcher scrot
-color=a0a0a0
+color=#a0a0a0
 
 
 [mixer]
 full_text=🎧
 command=exec i3blocks_mouse_launcher pavucontrol
-color=#a0a0a0
+color=#f09090
 
 

@@ -1,7 +1,8 @@
 #!/bin/sh
 #xrdb < ~/.Xresources
 #exec xterm
-i3
+i3 >& ~/.cache/my_i3.log
+#qtile start
 killall dbus-launch
 killall dbus-daemon
 killall xsel
