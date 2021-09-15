@@ -106,7 +106,7 @@ bindsym $mod+Ctrl+Up resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+Right resize grow width 10 px or 10 ppt
 
 bar {
-    status_command i3blocks
+    status_command i3blocks-idm
     colors {
         background #400a2a
         statusline #e0e0e0
@@ -119,15 +119,13 @@ bar {
 }
 
 exec --no-startup-id xrdb < ~/.Xresources
-#exec xsetroot -solid "#2a0a1a"
 exec --no-startup-id xss-lock --transfer-sleep-lock -- slock
 exec --no-startup-id xmodmap_load
 exec --no-startup-id create_cache_links
 exec --no-startup-id pipewire
 exec --no-startup-id xwallpaper --center ~/.background
-#exec --no-startup-id picom
 exec --no-startup-id dunst -print > ~/.cache/dunst.log
 exec --no-startup-id caffeine
 exec --no-startup-id xpad
 exec --no-startup-id volumeicon
-
+#exec --no-startup-id picom

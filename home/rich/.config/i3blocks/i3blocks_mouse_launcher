@@ -10,24 +10,22 @@ focus_parent_a_lot () {
 case "$BLOCK_BUTTON" in
     1)
         i3-msg split vertical >& /dev/null
-        $@
+        exec $@
     ;;
     3)
         i3-msg split horizontal >& /dev/null
-        $@
+        exec $@
     ;;
     8)
         focus_parent_a_lot
         i3-msg split vertical >& /dev/null
-        $@
+        exec $@
     ;;
     9)
         focus_parent_a_lot
         i3-msg split horizontal >& /dev/null
-        $@
+        exec $@
     ;;
 esac
 # unhandled buttons below
-
-return 0
 

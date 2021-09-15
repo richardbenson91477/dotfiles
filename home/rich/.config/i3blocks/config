@@ -6,43 +6,43 @@ separator_block_width=8
 
 [qutebrowser]
 full_text=🕵
-command=i3blocks_mouse_launcher qutebrowser
+command=exec i3blocks_mouse_launcher qutebrowser
 color=2020f0
 
 
 [alacritty]
 full_text=💻
-command=i3blocks_mouse_launcher alacritty
+command=exec i3blocks_mouse_launcher alacritty
 color=#00FF00
 
 
 [xboard]
 full_text=♚
-command=i3blocks_mouse_launcher xboard -depth 2 -fcp hoichess
+command=exec i3blocks_mouse_launcher xboard -depth 2 -fcp hoichess
 color=#f0a0a0
 
 
 [ranger]
 full_text=📁
-command=i3blocks_mouse_launcher alacritty -e ranger
+command=exec i3blocks_mouse_launcher alacritty -e ranger
 color=#2080e0
 
 
 [dmenu_abstract]
 full_text=🌈
-command=i3blocks_mouse_launcher $HOME/bin/dmenu_abstract
+command=exec i3blocks_mouse_launcher $HOME/bin/dmenu_abstract
 color=#a04080
 
 
 [gsimplecal]
 full_text=🗓 
-command=i3blocks_mouse_launcher gsimplecal
+command=exec i3blocks_mouse_launcher gsimplecal
 color=e0e0e0
 
 
 [greetings]
 full_text=rich@dash
-command=i3blocks_mouse_launcher alacritty -e htop
+command=exec i3blocks_mouse_launcher alacritty -e htop
 color=#f080a0
 
 
@@ -62,13 +62,13 @@ color=#ffc080
 
 [scrot]
 full_text=⎙
-command=i3blocks_mouse_launcher scrot
+command=exec i3blocks_mouse_launcher scrot
 color=a0a0a0
 
 
 [mixer]
 full_text=🎧
-command=i3blocks_mouse_launcher pavucontrol
+command=exec i3blocks_mouse_launcher pavucontrol
 color=#a0a0a0
 
 
