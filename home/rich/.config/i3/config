@@ -112,28 +112,39 @@ bindsym $mod+Ctrl+Right resize grow width 32 px
 
 mode "resize" {
     bindsym $mod+Escape mode "default"
+    bindsym --border button2 mode "default"
     bindsym $mod+m mode "rodent"
 
     bindsym --border button1 resize shrink width 32 px
-    bindsym --border button2 mode "default"
     bindsym --border button3 resize grow width 32 px
     bindsym --border button4 resize grow height 32 px
     bindsym --border button5 resize shrink height 32 px
+    bindsym --border Shift+button1 resize shrink width 128 px
+    bindsym --border Shift+button3 resize grow width 128 px
+    bindsym --border Shift+button4 resize grow height 128 px
+    bindsym --border Shift+button5 resize shrink height 128 px
+
 #    bindsym --border button8 
 #    bindsym --border button9 
 }
 
 mode "rodent" {
+    bindsym --border button2 mode "default"
+
     bindsym $mod+Escape mode "default"
     bindsym $mod+m mode "default"
-    bindsym $mod+h exec --no-startup-id xdotool mousemove_relative -- -16 0
-    bindsym $mod+j exec --no-startup-id xdotool mousemove_relative -- 0 +16
-    bindsym $mod+k exec --no-startup-id xdotool mousemove_relative -- 0 -16
-    bindsym $mod+l exec --no-startup-id xdotool mousemove_relative -- +16 0
-    bindsym $mod+Shift+h exec --no-startup-id xdotool mousemove_relative -- -32 0
-    bindsym $mod+Shift+j exec --no-startup-id xdotool mousemove_relative -- 0 +32
-    bindsym $mod+Shift+k exec --no-startup-id xdotool mousemove_relative -- 0 -32
-    bindsym $mod+Shift+l exec --no-startup-id xdotool mousemove_relative -- +32 0
+    bindsym $mod+Ctrl+h exec --no-startup-id xdotool mousemove_relative -- -16 0
+    bindsym $mod+Ctrl+j exec --no-startup-id xdotool mousemove_relative -- 0 +16
+    bindsym $mod+Ctrl+k exec --no-startup-id xdotool mousemove_relative -- 0 -16
+    bindsym $mod+Ctrl+l exec --no-startup-id xdotool mousemove_relative -- +16 0
+    bindsym $mod+h exec --no-startup-id xdotool mousemove_relative -- -32 0
+    bindsym $mod+j exec --no-startup-id xdotool mousemove_relative -- 0 +32
+    bindsym $mod+k exec --no-startup-id xdotool mousemove_relative -- 0 -32
+    bindsym $mod+l exec --no-startup-id xdotool mousemove_relative -- +32 0
+    bindsym $mod+Shift+h exec --no-startup-id xdotool mousemove_relative -- -64 0
+    bindsym $mod+Shift+j exec --no-startup-id xdotool mousemove_relative -- 0 +64
+    bindsym $mod+Shift+k exec --no-startup-id xdotool mousemove_relative -- 0 -64
+    bindsym $mod+Shift+l exec --no-startup-id xdotool mousemove_relative -- +64 0
     bindsym $mod+a exec --no-startup-id xdotool click 1
     bindsym $mod+s exec --no-startup-id xdotool click 2
     bindsym $mod+d exec --no-startup-id xdotool click 3
