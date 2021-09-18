@@ -13,13 +13,14 @@ client.unfocused        #404040 #202020 #888888 #404040   #503050
 client.urgent           #901010 #202020 #ffffff #900000   #a02020
 client.placeholder      #000000 #202020 #ffffff #000000   #000000
 client.background       #202020
-
-bindsym --border button1 something else
+o
+#bindsym --border button1 exec true
 bindsym --border button2 mode "resize"
 bindsym --border button3 mode "move"
-
 bindsym --whole-window button6 fullscreen toggle
 bindsym --whole-window button7 kill
+bindsym --border button8 workspace prev
+bindsym --border button9 workspace next
 
 #$mod+Escape
 #f1-f12
@@ -77,7 +78,7 @@ bindsym $mod+Ctrl+j resize grow height 32 px
 bindsym $mod+Ctrl+k resize shrink height 32 px
 bindsym $mod+Ctrl+l resize grow width 32 px
 bindsym $mod+semicolon exec --no-startup-id dmenu_abstract
-# apostrophe
+bindsym $mod+apostrophe workspace next
 bindsym $mod+Return exec --no-startup-id i3-msg split vertical && alacritty
 bindsym $mod+Shift+Return exec --no-startup-id i3-msg split horizontal && alacritty
 
@@ -134,6 +135,9 @@ mode "resize" {
     bindsym --border Shift+button3 resize grow width 128 px
     bindsym --border Shift+button4 resize grow height 128 px
     bindsym --border Shift+button5 resize shrink height 128 px
+
+    bindsym --border button8 floating toggle
+    #bindsym --border button9 
 }
 
 mode "rodent" {
