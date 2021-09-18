@@ -14,15 +14,12 @@ client.urgent           #901010 #202020 #ffffff #900000   #a02020
 client.placeholder      #000000 #202020 #ffffff #000000   #000000
 client.background       #202020
 
-bindsym --border button1 move left
+bindsym --border button1 something else
 bindsym --border button2 mode "resize"
-bindsym --border button3 move right
-bindsym --border button4 move up
-bindsym --border button5 move down
+bindsym --border button3 mode "move"
+
 bindsym --whole-window button6 fullscreen toggle
 bindsym --whole-window button7 kill
-bindsym --border button8 move container to workspace prev
-bindsym --border button9 exec --no-startup-id i3-move-container-right
 
 #$mod+Escape
 #f1-f12
@@ -110,10 +107,24 @@ bindsym $mod+Ctrl+Down resize grow height 32 px
 bindsym $mod+Ctrl+Up resize shrink height 32 px
 bindsym $mod+Ctrl+Right resize grow width 32 px
 
+mode "move" {
+    bindsym $mod+Escape mode "default"
+    bindsym $mod+m mode "rodent"
+    bindsym --border button2 mode "default"
+
+    bindsym --border button1 move left
+    bindsym --border button3 move right
+    bindsym --border button4 move up
+    bindsym --border button5 move down
+
+    bindsym --border button8 move container to workspace prev
+    bindsym --border button9 exec --no-startup-id i3-move-container-right
+}
+
 mode "resize" {
     bindsym $mod+Escape mode "default"
-    bindsym --border button2 mode "default"
     bindsym $mod+m mode "rodent"
+    bindsym --border button2 mode "default"
 
     bindsym --border button1 resize shrink width 32 px
     bindsym --border button3 resize grow width 32 px
@@ -123,16 +134,13 @@ mode "resize" {
     bindsym --border Shift+button3 resize grow width 128 px
     bindsym --border Shift+button4 resize grow height 128 px
     bindsym --border Shift+button5 resize shrink height 128 px
-
-#    bindsym --border button8 
-#    bindsym --border button9 
 }
 
 mode "rodent" {
-    bindsym --border button2 mode "default"
-
     bindsym $mod+Escape mode "default"
     bindsym $mod+m mode "default"
+    bindsym --border button2 mode "default"
+
     bindsym $mod+Ctrl+h exec --no-startup-id xdotool mousemove_relative -- -16 0
     bindsym $mod+Ctrl+j exec --no-startup-id xdotool mousemove_relative -- 0 +16
     bindsym $mod+Ctrl+k exec --no-startup-id xdotool mousemove_relative -- 0 -16
@@ -150,7 +158,6 @@ mode "rodent" {
     bindsym $mod+d exec --no-startup-id xdotool click 3
     bindsym $mod+f exec --no-startup-id xdotool click 4
     bindsym $mod+g exec --no-startup-id xdotool click 5
-#    bindsym $mod+1 workspace number 1
 }
 
 bar {
