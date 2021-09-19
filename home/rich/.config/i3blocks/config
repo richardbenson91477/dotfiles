@@ -34,12 +34,6 @@ command=i3blocks_mouse_launcher "$HOME/bin/dmenu_abstract"
 color=#a04080
 
 
-[gsimplecal]
-full_text=🗓 
-command=i3blocks_mouse_launcher "gsimplecal"
-color=#e0e0e0
-
-
 [greetings]
 full_text=rich@dash
 command=i3blocks_mouse_launcher "alacritty -e htop"
@@ -53,8 +47,8 @@ interval=3600
 color=#A4C2F4
 
 
-[time]
-command=date +"%a %b %d %y %I:%M %p"
+[date]
+command=$HOME/bin/date_or_gsimplecal
 interval=60
 color=#ffc080
 
