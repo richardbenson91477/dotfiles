@@ -23,7 +23,7 @@ M4LAUNCHER(`dmenu_abstract',`🌈',`$HOME/bin/dmenu_abstract',`#a04080')
 M4LAUNCHER(`greetings',M4UID,`alacritty -e htop',`#f080a0')
 
 M4INTERVAL(`weather',`curl -Ss "https://wttr.in?0&T&Q" | cut -c 16- | head -2 | xargs echo',`3600',`#A4C2F4')
-M4INTERVAL(`date',`$HOME/bin/date_or_gsimplecal',`60',`#ffc080')
+M4INTERVAL(`date',`$HOME/bin/i3blocks_date_or_cal',`60',`#ffc080')
 
 M4LAUNCHER(`scrot',`⎙',`scrot',`#a0a0a0')
 M4LAUNCHER(`mixer',`🎧',`pavucontrol',`#f09090')

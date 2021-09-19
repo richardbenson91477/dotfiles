@@ -1,0 +1,11 @@
+#!/bin/sh
+date +"%a %b %d %y %I:%M %p"
+
+case "$BLOCK_BUTTON" in
+    1)
+        i3-msg -q "exec --no-startup-id gsimplecal"
+    ;;
+    3)
+    ;;
+esac
+

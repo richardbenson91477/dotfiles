@@ -48,7 +48,7 @@ color=#A4C2F4
 
 
 [date]
-command=$HOME/bin/date_or_gsimplecal
+command=$HOME/bin/i3blocks_date_or_cal
 interval=60
 color=#ffc080
 
