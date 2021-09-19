@@ -9,7 +9,7 @@
  '(global-display-line-numbers-mode t)
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(rainbow-delimiters fantom-theme rainbow-mode gnu-elpa-keyring-update gnu-apl-mode slime powerline org neotree mood-one-theme markdown-mode humanoid-themes gnu-elpa geiser evil color-theme-approximate))
+   '(chess ## rainbow-delimiters fantom-theme rainbow-mode gnu-elpa-keyring-update gnu-apl-mode slime powerline org neotree mood-one-theme markdown-mode humanoid-themes gnu-elpa geiser evil color-theme-approximate))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -31,10 +31,7 @@
 
 (if (display-graphic-p)
     (load-theme 'fantom)
-    (progn
-        (load-theme 'humanoid-dark)
-        (print 'test)
-    )
+;    (load-theme 'humanoid-dark)
 )
 
 (global-set-key "\C-x\C-m" 'compile)
@@ -73,5 +70,4 @@
 
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
-
 
