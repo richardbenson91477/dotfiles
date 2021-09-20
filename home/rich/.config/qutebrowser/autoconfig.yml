@@ -17,7 +17,7 @@ settings:
   colors.tabs.selected.odd.bg:
     global: '#802040'
   colors.webpage.bg:
-    global: '#a080a0'
+    global: '#400040'
   colors.webpage.preferred_color_scheme:
     global: dark
   completion.height:
