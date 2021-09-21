@@ -20,7 +20,6 @@ case "$BLOCK_BUTTON" in
         focus_parent_a_lot
         i3-msg -q split vertical
         i3-msg -q "exec --no-startup-id $1"
-        exec $@
     ;;
     9)
         focus_parent_a_lot
