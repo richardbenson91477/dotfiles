@@ -24,18 +24,20 @@ case "$BLOCK_BUTTON" in
         i3-msg -q focus $CID
         i3-msg -q kill 
         exit 0
-    ;;
+        ;;
     3)
         SPLIT=horizontal
-    ;;
+        ;;
+    7)
+        ;;
     8)
         focus_parent_a_lot
         SPLIT=vertical
-    ;;
+        ;;
     9)
         focus_parent_a_lot
         SPLIT=horizontal
-    ;;
+        ;;
 esac
 
 i3-msg -q split "$SPLIT"

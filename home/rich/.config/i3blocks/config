@@ -29,6 +29,17 @@ command=i3blocks_mouse_launcher "alacritty -e ranger"
 color=#2080e0
 
 
+[budget]
+full_text=💼
+command=i3blocks_mouse_launcher "xdg-open $HOME/.budget"
+color=
+
+
+[notes]
+full_text=📜
+command=i3blocks_mouse_launcher "xdg-open $HOME/.notes"
+color=
+
 
 [dmenu_abstract]
 full_text=🌈

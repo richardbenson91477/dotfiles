@@ -26,7 +26,8 @@ M4MLAUNCHER(`qutebrowser',`🕵',`qutebrowser',`#2020f0')
 M4MLAUNCHER(`alacritty',`💻',`alacritty',`#00FF00')
 M4MLAUNCHER(`xboard',`♚',`xboard -depth 2 -fcp hoichess',`#f0a0a0')
 M4MLAUNCHER(`ranger',`📁',`alacritty -e ranger',`#2080e0')
-
+M4MLAUNCHER(`budget',`💼',`xdg-open $HOME/.budget')
+M4MLAUNCHER(`notes',`📜',`xdg-open $HOME/.notes')
 M4LAUNCHER(`dmenu_abstract',`🌈',`$HOME/bin/dmenu_abstract',`#a04080')
 
 M4MLAUNCHER(`greetings',M4UID,`alacritty -e htop',`#f080a0')
