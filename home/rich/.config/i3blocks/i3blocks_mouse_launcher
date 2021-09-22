@@ -1,4 +1,6 @@
 #!/bin/sh
+IDD="$HOME/.cache/i3bml/"
+
 focus_parent_a_lot () {
     X=0
     while [ "$X" -lt 16 ]; do
@@ -9,24 +11,40 @@ focus_parent_a_lot () {
 
 case "$BLOCK_BUTTON" in
     1)
-        i3-msg -q split vertical
-        i3-msg -q "exec --no-startup-id $1"
+        SPLIT=vertical
+        ;;
+    2)
+        FN="$IDD/$1.cid"
+        if [ ! -e "$FN" ]; then
+            exit -1
+            fi
+
+        CID=$(cat "$FN")
+        rm -f "$FN"
+        i3-msg -q focus $CID
+        i3-msg -q kill 
+        exit 0
     ;;
     3)
-        i3-msg -q split horizontal
-        i3-msg -q "exec --no-startup-id $1"
+        SPLIT=horizontal
     ;;
     8)
         focus_parent_a_lot
-        i3-msg -q split vertical
-        i3-msg -q "exec --no-startup-id $1"
+        SPLIT=vertical
     ;;
     9)
         focus_parent_a_lot
-        i3-msg -q split horizontal
-        i3-msg -q "exec --no-startup-id $1"
+        SPLIT=horizontal
     ;;
 esac
 
-# unhandled buttons below
+i3-msg -q split "$SPLIT"
+
+# NOTE: this doesn't currently work with pavucontrol (and..?) or floating windows like dmenu
+CID=$(i3-msg open | jq .[].id)
+i3-msg -q focus "$CID"
+i3-msg -q "exec --no-startup-id $1"
+
+mkdir -p "$IDD"
+echo "$CID" > "$IDD/$1.cid"
 

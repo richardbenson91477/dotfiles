@@ -1,5 +1,6 @@
 
 
+
 separator=false
 separator_block_width=8
 
@@ -28,10 +29,12 @@ command=i3blocks_mouse_launcher "alacritty -e ranger"
 color=#2080e0
 
 
+
 [dmenu_abstract]
 full_text=🌈
-command=i3blocks_mouse_launcher "$HOME/bin/dmenu_abstract"
+command=i3-msg -q "exec --no-startup-id $HOME/bin/dmenu_abstract"
 color=#a04080
+
 
 
 [greetings]
@@ -56,13 +59,13 @@ color=#ffc080
 
 [scrot]
 full_text=⎙
-command=i3blocks_mouse_launcher "scrot"
+command=i3-msg -q "exec --no-startup-id scrot"
 color=#a0a0a0
 
 
 [mixer]
 full_text=🎧
-command=i3blocks_mouse_launcher "pavucontrol"
+command=i3-msg -q "exec --no-startup-id pavucontrol"
 color=#f09090
 
 
