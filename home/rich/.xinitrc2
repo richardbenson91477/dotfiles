@@ -1,16 +1,14 @@
 #!/bin/sh
 
 xrdb < ~/.Xresources
-
 xss-lock --transfer-sleep-lock -- slock &
 xmodmap_load &
 pipewire &
 xwallpaper --center ~/.background &
 dunst -print > ~/.cache/dunst.log &
 caffeine &
-xpad &
 volumeicon &
-jamesdsp &
+jamesdsp -t &
 create_cache_links
 #picom &
 
